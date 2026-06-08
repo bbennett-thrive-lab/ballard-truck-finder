@@ -320,14 +320,17 @@ function buildEntry({ venue, date, timeRange, truck, sourceStatus = "live", sour
 }
 
 function buildEntryFromDateRange({ venue, startDate, endDate, truck, confidence = "venue_calendar_api", notes = [] }) {
-  const start = new Date(startDate);
-  const end = new Date(endDate);
+  const start = String(startDate).match(/^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})/);
+  const end = String(endDate).match(/^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})/);
+  if (!start || !end) {
+    throw new Error(`Unable to parse calendar event range for ${truck}`);
+  }
   return buildEntry({
     venue,
-    date: format(start, "yyyy-MM-dd"),
+    date: start[1],
     timeRange: {
-      start: format(start, "HH:mm"),
-      end: format(end, "HH:mm")
+      start: start[2],
+      end: end[2]
     },
     truck,
     confidence,
