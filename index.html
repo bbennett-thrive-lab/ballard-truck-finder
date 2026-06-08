@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ballard Truck Finder</title>
+    <meta name="description" content="A public beta tracker for Ballard food truck schedules, venue coverage, and food truck source links." />
+    <meta property="og:title" content="Ballard Truck Finder" />
+    <meta property="og:description" content="Find current Ballard food truck stops by date and venue, with source links for schedule confirmation." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/ballard-food-truck-evening.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-label="Ballard food truck tracker">
+        <div class="hero-media" role="img" aria-label="Food truck outside a Ballard brewery"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <div class="brand-row">
+            <span class="brand-mark" aria-hidden="true">BT</span>
+            <div>
+              <p class="eyebrow">Ballard Brewery District</p>
+              <h1>Truck Finder</h1>
+            </div>
+          </div>
+          <div class="hero-panel">
+            <div>
+              <p class="status-label">Tonight's best bet</p>
+              <p class="status-title" id="topPick">Loading schedule...</p>
+            </div>
+            <div class="freshness" id="freshness">Checking data freshness</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Schedule controls">
+        <div class="control-group" role="group" aria-label="Date filter">
+          <button class="chip is-active" type="button" data-filter="today">Today</button>
+          <button class="chip" type="button" data-filter="tomorrow">Tomorrow</button>
+          <button class="chip" type="button" data-filter="week">This week</button>
+          <button class="chip" type="button" data-filter="all">All</button>
+        </div>
+        <label class="toggle">
+          <input id="openNowToggle" type="checkbox" />
+          <span>Open now</span>
+        </label>
+      </section>
+
+      <section class="tracker-grid">
+        <aside class="venue-panel" aria-label="Venue coverage">
+          <div class="section-heading">
+            <p class="eyebrow">Coverage</p>
+            <h2>Tracked venues</h2>
+          </div>
+          <div class="map-panel" id="venueMap" aria-label="Ballard venue map"></div>
+          <div id="venueList" class="venue-list"></div>
+        </aside>
+
+        <section class="schedule-panel" aria-label="Food truck schedule">
+          <div class="schedule-header">
+            <div>
+              <p class="eyebrow">Schedule</p>
+              <h2 id="scheduleTitle">Today</h2>
+              <div id="selectedVenueFilter" class="selected-venue-filter" aria-live="polite"></div>
+            </div>
+            <div class="count-pill" id="resultCount">0 trucks</div>
+          </div>
+          <div id="scheduleList" class="schedule-list"></div>
+        </section>
+      </section>
+
+      <section class="directory-panel" aria-label="Food truck directory">
+        <div class="directory-header">
+          <div>
+            <p class="eyebrow">Directory</p>
+            <h2>Food Truck Directory</h2>
+          </div>
+          <div class="count-pill" id="directoryCount">0 trucks</div>
+        </div>
+        <div id="directoryList" class="directory-list"></div>
+      </section>
+
+      <footer class="site-footer">
+        Schedules change. Please confirm with the venue or food truck before heading out.
+      </footer>
+    </main>
+
+    <template id="scheduleTemplate">
+      <article class="truck-card">
+        <div class="card-topline">
+          <span class="date-badge"></span>
+          <span class="source-badge"></span>
+        </div>
+        <h3></h3>
+        <p class="meta"></p>
+        <div class="tag-row"></div>
+        <div class="card-footer">
+          <a class="source-link" target="_blank" rel="noreferrer">Source</a>
+          <button class="save-button" type="button">Save</button>
+        </div>
+      </article>
+    </template>
+
+    <template id="directoryTemplate">
+      <article class="directory-card">
+        <div class="directory-card-main">
+          <div>
+            <div class="card-topline">
+              <span class="source-badge"></span>
+            </div>
+            <h3></h3>
+            <p class="meta"></p>
+            <div class="tag-row"></div>
+          </div>
+          <div class="directory-links"></div>
+        </div>
+        <div class="directory-stats">
+          <div>
+            <span>Next in Ballard</span>
+            <strong class="next-stop"></strong>
+          </div>
+          <div>
+            <span>Last seen</span>
+            <strong class="last-seen"></strong>
+          </div>
+          <div class="known-stops-stat">
+            <button class="known-stops-button" type="button" aria-expanded="false">
+              <span>Known stops</span>
+              <strong class="appearance-count"></strong>
+            </button>
+          </div>
+        </div>
+        <div class="known-stops-list" hidden></div>
+      </article>
+    </template>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js?v=public-beta-1"></script>
+  </body>
+</html>

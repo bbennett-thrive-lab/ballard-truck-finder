@@ -1,0 +1,2029 @@
+[
+  {
+    "date": "2026-05-25",
+    "start": "16:00",
+    "end": "19:00",
+    "truck": "El Koreano",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Korean-Mexican",
+    "tags": [
+      "Korean",
+      "Mexican",
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "truckUrl": "https://www.elkoreano.com/",
+    "lastScrapedAt": "2026-06-08T23:00:29.749Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-01",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Empanadas El Pachi",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Empanadas",
+    "tags": [
+      "Empanadas",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.982Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-01",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Katmandu Momocha",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Nepalese",
+    "tags": [
+      "Momos",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.992Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-02",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "BurgerDOM",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Burgers",
+    "tags": [
+      "Burgers",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.982Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-02",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Alebrijes",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Mexican",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.992Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-03",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Katmandu Momocha",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Nepalese",
+    "tags": [
+      "Momos",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.983Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-03",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Birrieria Pepe El Toro",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Birria",
+    "tags": [
+      "Tacos",
+      "Birria",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.992Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-04",
+    "start": "13:00",
+    "end": "20:00",
+    "truck": "Momo Express Urban Family Brewinginfo@urbanfamilybrewing.com1 (206) 595-5255",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Food truck",
+    "tags": [
+      "Lunch"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.993Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-04",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Alebrijes",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Mexican",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.983Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-05",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Birrieria Pepe El Toro",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Birria",
+    "tags": [
+      "Tacos",
+      "Birria",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.983Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-06",
+    "start": "13:00",
+    "end": "20:00",
+    "truck": "Momo Express",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Nepalese",
+    "tags": [
+      "Momos",
+      "Lunch"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.984Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-06",
+    "start": "16:30",
+    "end": "19:30",
+    "truck": "Llama Fusion",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Peruvian fusion",
+    "tags": [
+      "Peruvian",
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "lastScrapedAt": "2026-06-08T23:00:29.750Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-07",
+    "start": "08:00",
+    "end": "12:00",
+    "truck": "9th and Hennepin",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Breakfast sandwiches",
+    "tags": [
+      "Breakfast",
+      "Sandwiches"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.984Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-07",
+    "start": "13:00",
+    "end": "19:00",
+    "truck": "Kaosamai",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Thai",
+    "tags": [
+      "Thai",
+      "Lunch"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.985Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-07",
+    "start": "13:00",
+    "end": "21:00",
+    "truck": "Tacos & Beer",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Tacos",
+      "Lunch"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.474Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-tpm4x"
+    ]
+  },
+  {
+    "date": "2026-06-08",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Plaza Garcia",
+    "venue": "Obec Brewing",
+    "address": "1144 NW 52nd St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Mexican",
+      "Dinner"
+    ],
+    "source": "https://obecbrewing.com/",
+    "sourceType": "homepage_today",
+    "sourceStatus": "live",
+    "confidence": "today_only",
+    "lastScrapedAt": "2026-06-08T23:00:28.869Z",
+    "notes": [
+      "Obec homepage only exposes today's truck."
+    ]
+  },
+  {
+    "date": "2026-06-08",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "La Riviera Maya",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Mexican",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.985Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-08",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Where Ya At Matt",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "New Orleans",
+    "tags": [
+      "Po' boys",
+      "Cajun",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "truckUrl": "https://www.whereyaatmatt.com/",
+    "menuUrl": "https://www.whereyaatmatt.com/menu",
+    "lastScrapedAt": "2026-06-08T23:00:27.603Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-09",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Georgia's Greek",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Greek",
+    "tags": [
+      "Greek",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.985Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-09",
+    "start": "16:00",
+    "end": "21:00",
+    "truck": "Birrieria Pepe El Toro",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Birria",
+    "tags": [
+      "Tacos",
+      "Birria",
+      "Dinner"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.474Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/hzdwx4grkcr5ffd-hssdh"
+    ]
+  },
+  {
+    "date": "2026-06-09",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Impeccable Chicken",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Fried chicken",
+    "tags": [
+      "Chicken",
+      "Comfort food",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.604Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-10",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Georgia’s Greek",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Food truck",
+    "tags": [
+      "Dinner"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.474Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/43synw86cmenkmt"
+    ]
+  },
+  {
+    "date": "2026-06-10",
+    "start": "16:30",
+    "end": "20:30",
+    "truck": "El Gran Taco",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Tacos",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.605Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-10",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Impeccable Chicken",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Fried chicken",
+    "tags": [
+      "Chicken",
+      "Comfort food",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.985Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-11",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Birrieria Pepe El Toro",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Birria",
+    "tags": [
+      "Tacos",
+      "Birria",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.606Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-11",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Burger Planet",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Burgers",
+    "tags": [
+      "Burgers",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.986Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-11",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Impeckable Chicken",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Fried chicken",
+    "tags": [
+      "Chicken",
+      "Comfort food",
+      "Dinner"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.474Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/bmn9b7bjcsm7zzp-z4489-3tbf5"
+    ]
+  },
+  {
+    "date": "2026-06-12",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Tacos and Beer",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Tacos",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.986Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-12",
+    "start": "16:00",
+    "end": "21:00",
+    "truck": "Paparepas",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Arepas",
+    "tags": [
+      "Arepas",
+      "Venezuelan",
+      "Dinner"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.474Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/casl2lmafhkfy66-gf6ng-wcwks"
+    ]
+  },
+  {
+    "date": "2026-06-12",
+    "start": "16:30",
+    "end": "20:00",
+    "truck": "El Koreano",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Korean-Mexican",
+    "tags": [
+      "Korean",
+      "Mexican",
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "truckUrl": "https://www.elkoreano.com/",
+    "lastScrapedAt": "2026-06-08T23:00:29.750Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-12",
+    "start": "17:00",
+    "end": "21:00",
+    "truck": "El Sabor Boricua",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Puerto Rican",
+    "tags": [
+      "Plantains",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.607Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-13",
+    "start": "13:00",
+    "end": "19:00",
+    "truck": "Tat's Truck",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Sandwiches",
+    "tags": [
+      "Cheesesteaks",
+      "Lunch"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.607Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-13",
+    "start": "13:00",
+    "end": "20:00",
+    "truck": "Oskar's Pizza",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Pizza",
+    "tags": [
+      "Pizza",
+      "Lunch"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.986Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-13",
+    "start": "13:00",
+    "end": "21:00",
+    "truck": "Georgia’s Greek",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Food truck",
+    "tags": [
+      "Lunch"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.474Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/b5s6zwarbbrlbs6"
+    ]
+  },
+  {
+    "date": "2026-06-14",
+    "start": "08:00",
+    "end": "12:00",
+    "truck": "9th and Hennepin",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Breakfast sandwiches",
+    "tags": [
+      "Breakfast",
+      "Sandwiches"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.987Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-14",
+    "start": "13:00",
+    "end": "19:00",
+    "truck": "Kaosamai Thai",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Thai",
+    "tags": [
+      "Thai",
+      "Lunch"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.608Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-14",
+    "start": "13:00",
+    "end": "19:00",
+    "truck": "Now Make Me A Sandwich",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Sandwiches",
+    "tags": [
+      "Sandwiches",
+      "Lunch"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.987Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-14",
+    "start": "13:00",
+    "end": "21:00",
+    "truck": "Tacos & Beer",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Tacos",
+      "Lunch"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.474Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-6hyh9"
+    ]
+  },
+  {
+    "date": "2026-06-15",
+    "start": "11:00",
+    "end": "15:00",
+    "truck": "Wich Came First",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Sandwiches",
+    "tags": [
+      "Lunch",
+      "Sandwiches"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.608Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-15",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Empanadas El Pachi",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Empanadas",
+    "tags": [
+      "Empanadas",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.988Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-15",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Russo Pizzarium",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Pizza",
+    "tags": [
+      "Pizza",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.609Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-16",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "BurgerDOM",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Burgers",
+    "tags": [
+      "Burgers",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.988Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-16",
+    "start": "16:00",
+    "end": "21:00",
+    "truck": "WISEGUY ITALIAN",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Food truck",
+    "tags": [
+      "Dinner"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.474Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/385xg5dc3cpsfkj-8hf4l-d8xfl-5gf6t-fb78h-h6r9t-zt7hz-f3wbz-yt57z-wa7b8-5m9gr-4bxp5-9ttlg-e3c6l-btp56-za2na-yzdhw-2p7g7-8cjw8-4lnl4-3cwxb-yx6fa-kmxdc-dhfps-btkbb-2t887-lcrpj-b658h"
+    ]
+  },
+  {
+    "date": "2026-06-16",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Tacos & Beer",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Tacos",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.610Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-17",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Katmandu Momocha",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Nepalese",
+    "tags": [
+      "Momos",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.988Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-17",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Georgia’s Greek",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Food truck",
+    "tags": [
+      "Dinner"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.474Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/hm337f3xj6m5zer"
+    ]
+  },
+  {
+    "date": "2026-06-17",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "The Marigold Wood Fired Pizza",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Pizza",
+    "tags": [
+      "Pizza",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.611Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-18",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Alebrijes",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Mexican",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.988Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-18",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Kottu Seattle",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Sri Lankan",
+    "tags": [
+      "Kottu",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.611Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-18",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Impeckable Chicken",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Fried chicken",
+    "tags": [
+      "Chicken",
+      "Comfort food",
+      "Dinner"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.474Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/bmn9b7bjcsm7zzp-z4489-8e7e6"
+    ]
+  },
+  {
+    "date": "2026-06-19",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Birrieria Pepe El Toro",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Birria",
+    "tags": [
+      "Tacos",
+      "Birria",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.989Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-19",
+    "start": "16:00",
+    "end": "21:00",
+    "truck": "Wood Shop BBQ",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Food truck",
+    "tags": [
+      "Dinner"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.473Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/jcwfj83bhmllztn-8phat-knnff-8xhkz-dcneh-xjr3d-af9k3-3pht7-68ghh-49nfg-cht55-l46lx-daykz-szmdj-jgerd-gbk34-zjlll-xtlab-e5y6b-6bct5-hwkte-c3ztw-6847t-jnyk3-n5f2x-st9ct-fkt22-5zsxf-gawr7-2jnmx-tkhmx"
+    ]
+  },
+  {
+    "date": "2026-06-19",
+    "start": "16:30",
+    "end": "20:00",
+    "truck": "Kaosamai",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Thai",
+    "tags": [
+      "Thai",
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "truckUrl": "https://www.kaosamai.com/",
+    "lastScrapedAt": "2026-06-08T23:00:29.751Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-19",
+    "start": "17:00",
+    "end": "21:00",
+    "truck": "Off the Rez",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Native American",
+    "tags": [
+      "Fry bread",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.612Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-20",
+    "start": "13:00",
+    "end": "20:00",
+    "truck": "Georgia's Greek",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Greek",
+    "tags": [
+      "Greek",
+      "Lunch"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.613Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-20",
+    "start": "13:00",
+    "end": "20:00",
+    "truck": "Momo Express",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Nepalese",
+    "tags": [
+      "Momos",
+      "Lunch"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.989Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-20",
+    "start": "13:00",
+    "end": "21:00",
+    "truck": "Hallava Falafel",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Food truck",
+    "tags": [
+      "Lunch"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.473Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/49wrmadtyg74wf8-ayg6d"
+    ]
+  },
+  {
+    "date": "2026-06-21",
+    "start": "08:00",
+    "end": "12:00",
+    "truck": "9th and Hennepin",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Breakfast sandwiches",
+    "tags": [
+      "Breakfast",
+      "Sandwiches"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.989Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-21",
+    "start": "13:00",
+    "end": "19:00",
+    "truck": "El Pirata Tortas Y Burritos / Now Make Me A Sandwich",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Mexican and sandwiches",
+    "tags": [
+      "Tortas",
+      "Burritos",
+      "Sandwiches",
+      "Lunch"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.613Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-21",
+    "start": "13:00",
+    "end": "19:00",
+    "truck": "Kaosamai",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Thai",
+    "tags": [
+      "Thai",
+      "Lunch"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.989Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-21",
+    "start": "13:00",
+    "end": "21:00",
+    "truck": "Tacos & Beer",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Tacos",
+      "Lunch"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.473Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-r66jp"
+    ]
+  },
+  {
+    "date": "2026-06-22",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "La Riviera Maya",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Mexican",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.990Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-22",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Where Ya At Matt",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "New Orleans",
+    "tags": [
+      "Po' boys",
+      "Cajun",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "truckUrl": "https://www.whereyaatmatt.com/",
+    "menuUrl": "https://www.whereyaatmatt.com/menu",
+    "lastScrapedAt": "2026-06-08T23:00:27.614Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-23",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Georgia's Greek",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Greek",
+    "tags": [
+      "Greek",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.990Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-23",
+    "start": "16:00",
+    "end": "21:00",
+    "truck": "Birrieria Pepe El Toro",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Birria",
+    "tags": [
+      "Tacos",
+      "Birria",
+      "Dinner"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.473Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/hzdwx4grkcr5ffd-hssdh-fy2a3"
+    ]
+  },
+  {
+    "date": "2026-06-23",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Impeccable Chicken",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Fried chicken",
+    "tags": [
+      "Chicken",
+      "Comfort food",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.614Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-24",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Georgia’s Greek",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Food truck",
+    "tags": [
+      "Dinner"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.473Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/sp4mk73specmhp6"
+    ]
+  },
+  {
+    "date": "2026-06-24",
+    "start": "16:30",
+    "end": "20:30",
+    "truck": "El Gran Taco",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Tacos",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.615Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-24",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Impeccable Chicken",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Fried chicken",
+    "tags": [
+      "Chicken",
+      "Comfort food",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.990Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-25",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Birrieria Pepe El Toro",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Birria",
+    "tags": [
+      "Tacos",
+      "Birria",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.615Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-25",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Burger Planet",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Burgers",
+    "tags": [
+      "Burgers",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.990Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-25",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Impeckable Chicken",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Fried chicken",
+    "tags": [
+      "Chicken",
+      "Comfort food",
+      "Dinner"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.473Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/bmn9b7bjcsm7zzp-z4489-gxbwy"
+    ]
+  },
+  {
+    "date": "2026-06-26",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Tacos and Beer",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Tacos",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.990Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-26",
+    "start": "16:00",
+    "end": "21:00",
+    "truck": "Paparepas",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Arepas",
+    "tags": [
+      "Arepas",
+      "Venezuelan",
+      "Dinner"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.473Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/casl2lmafhkfy66-gf6ng-b7dah"
+    ]
+  },
+  {
+    "date": "2026-06-26",
+    "start": "16:30",
+    "end": "19:30",
+    "truck": "Tisket Tasket",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Food truck",
+    "tags": [
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "truckUrl": "https://www.tisket-tasket-truck.com/",
+    "lastScrapedAt": "2026-06-08T23:00:29.751Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-26",
+    "start": "17:00",
+    "end": "21:00",
+    "truck": "El Sabor Boricua",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Puerto Rican",
+    "tags": [
+      "Plantains",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.618Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-27",
+    "start": "13:00",
+    "end": "19:00",
+    "truck": "Tat's Truck",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Sandwiches",
+    "tags": [
+      "Cheesesteaks",
+      "Lunch"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.618Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-27",
+    "start": "13:00",
+    "end": "20:00",
+    "truck": "Oskar's Pizza",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Pizza",
+    "tags": [
+      "Pizza",
+      "Lunch"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.991Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-27",
+    "start": "13:00",
+    "end": "21:00",
+    "truck": "Georgia’s Greek",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Food truck",
+    "tags": [
+      "Lunch"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.473Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/4azf8f48x6whb52"
+    ]
+  },
+  {
+    "date": "2026-06-28",
+    "start": "08:00",
+    "end": "12:00",
+    "truck": "9th and Hennepin",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Breakfast sandwiches",
+    "tags": [
+      "Breakfast",
+      "Sandwiches"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.991Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-28",
+    "start": "13:00",
+    "end": "19:00",
+    "truck": "Kaosamai Thai",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Thai",
+    "tags": [
+      "Thai",
+      "Lunch"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.619Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-28",
+    "start": "13:00",
+    "end": "19:00",
+    "truck": "Now Make Me A Sandwich",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Sandwiches",
+    "tags": [
+      "Sandwiches",
+      "Lunch"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.991Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-28",
+    "start": "13:00",
+    "end": "21:00",
+    "truck": "Tacos & Beer",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Tacos",
+      "Lunch"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.473Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-xe5np"
+    ]
+  },
+  {
+    "date": "2026-06-29",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Empanadas El Pachi",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Empanadas",
+    "tags": [
+      "Empanadas",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.992Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-29",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Russo Pizzarium",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Pizza",
+    "tags": [
+      "Pizza",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.619Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-30",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "BurgerDOM",
+    "venue": "Urban Family Brewing",
+    "address": "1103 NW 52nd St",
+    "cuisine": "Burgers",
+    "tags": [
+      "Burgers",
+      "Dinner"
+    ],
+    "source": "https://urbanfamilybrewing.com/home/calendar/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.992Z",
+    "notes": []
+  },
+  {
+    "date": "2026-06-30",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Tummy Yummy Thai",
+    "venue": "Yonder Cider x Bale Breaker",
+    "address": "826 NW 49th St",
+    "cuisine": "Thai",
+    "tags": [
+      "Thai",
+      "Dinner"
+    ],
+    "source": "https://www.bbycballard.com/food-trucks-1-1",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_calendar_api",
+    "lastScrapedAt": "2026-06-08T23:00:28.472Z",
+    "notes": [
+      "Event page: https://www.bbycballard.com/events-one/385xg5dc3cpsfkj-8hf4l-d8xfl-5gf6t-fb78h-h6r9t-zt7hz-f3wbz-yt57z-wa7b8-5m9gr-4bxp5-9ttlg-e3c6l-btp56-za2na-yzdhw-2p7g7-8cjw8-4lnl4-3cwxb-yx6fa-kmxdc-dhfps-btkbb-2t887-lcrpj-cx97p"
+    ]
+  },
+  {
+    "date": "2026-06-30",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Tacos & Beer",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Tacos",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.619Z",
+    "notes": []
+  },
+  {
+    "date": "2026-07-01",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "The Marigold Wood Fired Pizza",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Pizza",
+    "tags": [
+      "Pizza",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.620Z",
+    "notes": []
+  },
+  {
+    "date": "2026-07-02",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Kottu Seattle",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Sri Lankan",
+    "tags": [
+      "Kottu",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.620Z",
+    "notes": []
+  },
+  {
+    "date": "2026-07-03",
+    "start": "17:00",
+    "end": "21:00",
+    "truck": "Off the Rez",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Native American",
+    "tags": [
+      "Fry bread",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.621Z",
+    "notes": []
+  },
+  {
+    "date": "2026-07-04",
+    "start": "13:00",
+    "end": "20:00",
+    "truck": "Georgia's Greek",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Greek",
+    "tags": [
+      "Greek",
+      "Lunch"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.621Z",
+    "notes": []
+  },
+  {
+    "date": "2026-07-05",
+    "start": "13:00",
+    "end": "19:00",
+    "truck": "El Pirata Tortas Y Burritos / Now Make Me A Sandwich",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Mexican and sandwiches",
+    "tags": [
+      "Tortas",
+      "Burritos",
+      "Sandwiches",
+      "Lunch"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-06-08T23:00:27.622Z",
+    "notes": []
+  },
+  {
+    "date": "2026-07-10",
+    "start": "16:30",
+    "end": "20:00",
+    "truck": "Vandalz Taqueria",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Tacos",
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "truckUrl": "https://www.vandalzseattletaqueria.com/",
+    "lastScrapedAt": "2026-06-08T23:00:29.751Z",
+    "notes": []
+  },
+  {
+    "date": "2026-07-11",
+    "start": "16:30",
+    "end": "19:30",
+    "truck": "Llama Fusion",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Peruvian fusion",
+    "tags": [
+      "Peruvian",
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "lastScrapedAt": "2026-06-08T23:00:29.752Z",
+    "notes": []
+  },
+  {
+    "date": "2026-07-17",
+    "start": "16:30",
+    "end": "20:00",
+    "truck": "Kaosamai",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Thai",
+    "tags": [
+      "Thai",
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "truckUrl": "https://www.kaosamai.com/",
+    "lastScrapedAt": "2026-06-08T23:00:29.753Z",
+    "notes": []
+  },
+  {
+    "date": "2026-07-24",
+    "start": "16:30",
+    "end": "19:30",
+    "truck": "Vandalz Taqueria",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Tacos",
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "truckUrl": "https://www.vandalzseattletaqueria.com/",
+    "lastScrapedAt": "2026-06-08T23:00:29.754Z",
+    "notes": []
+  },
+  {
+    "date": "2026-08-08",
+    "start": "16:30",
+    "end": "19:30",
+    "truck": "Llama Fusion",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Peruvian fusion",
+    "tags": [
+      "Peruvian",
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "lastScrapedAt": "2026-06-08T23:00:29.754Z",
+    "notes": []
+  },
+  {
+    "date": "2026-08-14",
+    "start": "16:30",
+    "end": "19:30",
+    "truck": "Tisket Tasket",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Food truck",
+    "tags": [
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "truckUrl": "https://www.tisket-tasket-truck.com/",
+    "lastScrapedAt": "2026-06-08T23:00:29.755Z",
+    "notes": []
+  },
+  {
+    "date": "2026-08-21",
+    "start": "16:30",
+    "end": "20:00",
+    "truck": "Kaosamai",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Thai",
+    "tags": [
+      "Thai",
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "truckUrl": "https://www.kaosamai.com/",
+    "lastScrapedAt": "2026-06-08T23:00:29.755Z",
+    "notes": []
+  },
+  {
+    "date": "2026-08-29",
+    "start": "16:30",
+    "end": "19:30",
+    "truck": "Tisket Tasket",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Food truck",
+    "tags": [
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "truckUrl": "https://www.tisket-tasket-truck.com/",
+    "lastScrapedAt": "2026-06-08T23:00:29.756Z",
+    "notes": []
+  },
+  {
+    "date": "2026-09-11",
+    "start": "16:30",
+    "end": "20:00",
+    "truck": "Kaosamai",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Thai",
+    "tags": [
+      "Thai",
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "truckUrl": "https://www.kaosamai.com/",
+    "lastScrapedAt": "2026-06-08T23:00:29.756Z",
+    "notes": []
+  },
+  {
+    "date": "2026-09-25",
+    "start": "16:30",
+    "end": "20:00",
+    "truck": "Panda Dim Sum",
+    "venue": "Lucky Envelope Brewing",
+    "address": "907 NW 50th St",
+    "cuisine": "Dim sum",
+    "tags": [
+      "Dim sum",
+      "Dinner"
+    ],
+    "source": "https://www.luckyenvelopebrewing.com/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue_homepage_carousel",
+    "truckUrl": "https://www.pandadimsumtruck.com/",
+    "lastScrapedAt": "2026-06-08T23:00:29.757Z",
+    "notes": []
+  }
+]

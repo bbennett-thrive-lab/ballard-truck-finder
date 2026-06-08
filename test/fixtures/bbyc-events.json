@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Tummy Yummy Thai ",
+    "startDate": "2026-06-08T17:00:00-07:00",
+    "endDate": "2026-06-08T21:00:00-07:00",
+    "structuredContent": {
+      "_type": "CalendarEvent",
+      "startDate": "2026-06-08T17:00:00-07:00",
+      "endDate": "2026-06-08T21:00:00-07:00"
+    },
+    "fullUrl": "/events-one/tummy-yummy-thai"
+  },
+  {
+    "title": "Tacos &amp; Beer ",
+    "startDate": "2026-06-09T16:00:00-07:00",
+    "endDate": "2026-06-09T20:00:00-07:00",
+    "structuredContent": {
+      "_type": "CalendarEvent",
+      "startDate": "2026-06-09T16:00:00-07:00",
+      "endDate": "2026-06-09T20:00:00-07:00"
+    },
+    "fullUrl": "/events-one/tacos-and-beer"
+  },
+  {
+    "title": "Trivia Night",
+    "startDate": "2026-06-10T19:00:00-07:00",
+    "endDate": "2026-06-10T21:00:00-07:00",
+    "structuredContent": {
+      "_type": "CalendarEvent",
+      "startDate": "2026-06-10T19:00:00-07:00",
+      "endDate": "2026-06-10T21:00:00-07:00"
+    },
+    "fullUrl": "/events-one/trivia-night"
+  }
+]

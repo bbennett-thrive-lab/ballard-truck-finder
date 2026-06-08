@@ -1,0 +1,105 @@
+{
+  "generatedAt": "2026-06-08T23:00:31.314Z",
+  "venues": [
+    {
+      "id": "stoup",
+      "name": "Stoup Brewing - Ballard",
+      "address": "1108 NW 52nd St",
+      "status": "live",
+      "sourceStatus": "live",
+      "source": "https://www.stoupbrewing.com/ballard/",
+      "message": "Parsed 29 Stoup food truck events.",
+      "lastScrapedAt": "2026-06-08T23:00:27.622Z"
+    },
+    {
+      "id": "urban-family",
+      "name": "Urban Family Brewing",
+      "address": "1103 NW 52nd St",
+      "status": "live",
+      "sourceStatus": "live",
+      "source": "https://urbanfamilybrewing.com/home/calendar/",
+      "message": "Parsed 38 Urban Family food truck events.",
+      "lastScrapedAt": "2026-06-08T23:00:27.993Z"
+    },
+    {
+      "id": "yonder-bale-breaker",
+      "name": "Yonder Cider x Bale Breaker",
+      "address": "826 NW 49th St",
+      "status": "live",
+      "sourceStatus": "live",
+      "source": "https://www.bbycballard.com/food-trucks-1-1",
+      "message": "Parsed 20 BBYC calendar events.",
+      "lastScrapedAt": "2026-06-08T23:00:28.475Z"
+    },
+    {
+      "id": "obec",
+      "name": "Obec Brewing",
+      "address": "1144 NW 52nd St",
+      "status": "live",
+      "sourceStatus": "live",
+      "source": "https://obecbrewing.com/",
+      "message": "Parsed today's Obec food truck: Plaza Garcia.",
+      "lastScrapedAt": "2026-06-08T23:00:28.869Z"
+    },
+    {
+      "id": "reubens",
+      "name": "Reuben's Brews",
+      "address": "5010 14th Ave NW",
+      "status": "pending",
+      "sourceStatus": "permanent_food",
+      "source": "https://reubensbrews.com/location/ballard-taproom/",
+      "foodUrl": "https://reubensbrews.com/location/ballard-taproom/",
+      "message": "Reuben's Eats kitchen available; no rotating food truck schedule.",
+      "lastScrapedAt": "2026-06-08T23:00:29.322Z"
+    },
+    {
+      "id": "lucky-envelope",
+      "name": "Lucky Envelope Brewing",
+      "address": "907 NW 50th St",
+      "status": "live",
+      "sourceStatus": "live",
+      "source": "https://www.luckyenvelopebrewing.com/",
+      "message": "Parsed 15 Lucky Envelope food truck events.",
+      "lastScrapedAt": "2026-06-08T23:00:29.757Z"
+    },
+    {
+      "id": "fair-isle",
+      "name": "Fair Isle Brewing",
+      "address": "936 NW 49th St",
+      "status": "pending",
+      "sourceStatus": "permanent_food",
+      "source": "https://fairislebrewing.com/",
+      "foodUrl": "https://fairislebrewing.com/lamareamenu/",
+      "message": "Fair Isle Brewing has onsite food or food partners; no rotating truck schedule emitted.",
+      "lastScrapedAt": "2026-06-08T23:00:30.857Z"
+    },
+    {
+      "id": "great-notion-ballard",
+      "name": "Great Notion Ballard",
+      "address": "5101 14th Ave NW Ste. 101",
+      "status": "pending",
+      "sourceStatus": "permanent_food",
+      "source": "https://greatnotion.com/pages/ballard-1",
+      "foodUrl": "https://greatnotion.com/pages/ballard-1",
+      "message": "Great Notion Ballard has onsite food or food partners; no rotating truck schedule emitted.",
+      "lastScrapedAt": "2026-06-08T23:00:31.298Z"
+    }
+  ],
+  "sourceCards": [
+    {
+      "title": "Manual scraper",
+      "body": "5 of 8 venue adapters produced current schedule data at 2026-06-08T23:00:31.314Z.",
+      "link": "data/schedule.json"
+    },
+    {
+      "title": "Venue first",
+      "body": "Venue calendars decide what appears; official truck pages only enrich confirmed stops.",
+      "link": "data/sources.json"
+    },
+    {
+      "title": "Adapter queue",
+      "body": "Sources marked needs adapter, no schedule found, onsite food, empty, or error are shown but not mixed into results.",
+      "link": "https://www.ballardfoodtrucks.com/"
+    }
+  ]
+}
