@@ -435,5 +435,5 @@ test("frontend includes public beta publishing metadata and disclaimer", async (
     document.querySelector(".site-footer").textContent.replace(/\s+/g, " ").trim(),
     "Schedules change. Please confirm with the venue or food truck before heading out."
   );
-  assert.equal(document.querySelector('script[src="app.js?v=public-beta-1"]') !== null, true);
+  assert.equal(document.querySelector('script[src="app.js?v=venue-badge-1"]') !== null, true);
 });

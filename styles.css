@@ -1,15 +1,19 @@
 :root {
   --ink: #17211f;
-  --muted: #5f6965;
+  --muted: #4f5a57;
   --paper: #fbfaf7;
   --panel: #ffffff;
-  --line: #dedbd3;
+  --line: #e0ddd3;
   --mustard: #e0a82e;
   --tomato: #d95f43;
   --teal: #18756b;
   --evergreen: #24493f;
   --blue: #4b6f96;
-  --shadow: 0 18px 50px rgba(25, 31, 28, 0.13);
+  --shadow-soft: 0 16px 40px rgba(24, 32, 28, 0.11);
+  --focus: 0 0 0 3px rgba(24, 117, 107, 0.16);
+  --panel-radius: 8px;
+  --panel-padding: 18px;
+  --control-height: 40px;
 }
 
 * {
@@ -20,6 +24,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
+  line-height: 1.52;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -111,20 +116,20 @@ p {
 
 h1 {
   margin-bottom: 0;
-  font-size: clamp(3.4rem, 8vw, 7.6rem);
+  font-size: clamp(3rem, 7.4vw, 7rem);
   line-height: 0.86;
   letter-spacing: 0;
 }
 
 h2 {
   margin-bottom: 0;
-  font-size: 1.45rem;
+  font-size: 1.42rem;
   line-height: 1.1;
 }
 
 h3 {
   margin-bottom: 8px;
-  font-size: 1.18rem;
+  font-size: 1.2rem;
   line-height: 1.18;
 }
 
@@ -187,17 +192,32 @@ h3 {
 
 .chip,
 .save-button {
-  min-height: 40px;
+  min-height: var(--control-height);
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--panel-radius);
   background: var(--panel);
   color: var(--ink);
   cursor: pointer;
   font-weight: 800;
+  transition: border-color 140ms ease, background-color 140ms ease, color 140ms ease, transform 140ms ease;
 }
 
 .chip {
   padding: 0 14px;
+}
+
+.chip:hover {
+  transform: translateY(-1px);
+  border-color: rgba(36, 73, 63, 0.35);
+}
+
+.chip:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.chip {
+  min-width: 96px;
 }
 
 .chip.is-active {
@@ -208,16 +228,26 @@ h3 {
 
 .toggle {
   display: flex;
-  min-height: 40px;
+  min-height: var(--control-height);
   align-items: center;
   justify-content: center;
   gap: 8px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--panel-radius);
   background: var(--panel);
   padding: 0 12px;
   color: var(--ink);
   font-weight: 800;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  border-color: rgba(36, 73, 63, 0.35);
+}
+
+.toggle:focus-within {
+  outline: none;
+  box-shadow: var(--focus);
 }
 
 .toggle input {
@@ -229,7 +259,7 @@ h3 {
 .tracker-grid {
   display: grid;
   grid-template-columns: 355px minmax(0, 1fr);
-  gap: 18px;
+  gap: 20px;
   align-items: start;
 }
 
@@ -237,26 +267,26 @@ h3 {
 .schedule-panel,
 .directory-panel {
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--panel-radius);
   background: var(--panel);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
 }
 
 .venue-panel {
-  padding: 18px;
+  padding: var(--panel-padding);
 }
 
 .section-heading {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .map-panel {
   position: relative;
   height: 320px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: var(--panel-radius);
   background: #edf4f0;
-  border: 1px solid #d7d2c6;
+  border: 1px solid #d8d3c8;
 }
 
 .map-panel.is-hidden {
@@ -265,8 +295,8 @@ h3 {
 
 .venue-marker {
   display: grid;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border: 3px solid #fff;
   border-radius: 50%;
   background: var(--muted);
@@ -298,7 +328,7 @@ h3 {
 }
 
 .venue-marker.is-selected {
-  box-shadow: 0 0 0 5px rgba(224, 168, 46, 0.32), 0 10px 22px rgba(25, 31, 28, 0.3);
+  box-shadow: 0 0 0 5px rgba(224, 168, 46, 0.35), 0 12px 24px rgba(25, 31, 28, 0.3);
   transform: scale(1.08);
 }
 
@@ -317,7 +347,7 @@ h3 {
 .venue-list {
   display: grid;
   gap: 10px;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .venue-row {
@@ -326,17 +356,33 @@ h3 {
   gap: 8px;
   align-items: center;
   width: 100%;
-  border: 0;
-  border-top: 1px solid var(--line);
+  border: 1px solid transparent;
+  border-radius: var(--panel-radius);
   background: transparent;
   color: inherit;
   cursor: pointer;
-  padding-top: 10px;
+  padding: 10px;
   text-align: left;
+  transition: border-color 140ms ease, background-color 140ms ease, transform 140ms ease;
+}
+
+.venue-row:hover {
+  border-color: rgba(36, 73, 63, 0.22);
+  background: rgba(36, 73, 63, 0.04);
+}
+
+.venue-row:active {
+  transform: translateY(1px);
+}
+
+.venue-row:focus-visible {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: var(--focus);
 }
 
 .venue-row.is-selected {
-  border-top-color: rgba(224, 168, 46, 0.62);
+  border-color: rgba(224, 168, 46, 0.62);
   background: linear-gradient(90deg, rgba(224, 168, 46, 0.16), rgba(224, 168, 46, 0));
 }
 
@@ -360,20 +406,18 @@ h3 {
   outline-offset: 2px;
 }
 
-.venue-row:focus {
-  outline: 2px solid rgba(24, 117, 107, 0.28);
-  outline-offset: 2px;
-}
-
 .venue-row strong {
   display: block;
   margin-bottom: 3px;
-  font-size: 0.93rem;
+  font-size: 0.94rem;
 }
 
 .venue-row span {
   color: var(--muted);
   font-size: 0.82rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .count-pill,
@@ -381,9 +425,10 @@ h3 {
 .date-badge {
   border-radius: 999px;
   padding: 6px 9px;
-  font-size: 0.74rem;
+  font-size: 0.73rem;
   font-weight: 800;
   white-space: nowrap;
+  line-height: 1.3;
 }
 
 .all-venues-button {
@@ -392,13 +437,23 @@ h3 {
   align-items: center;
   justify-content: space-between;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--panel-radius);
   background: var(--panel);
   color: var(--ink);
   cursor: pointer;
   font-weight: 800;
-  padding: 0 11px;
+  padding: 0 12px;
   text-align: left;
+  transition: border-color 140ms ease, background-color 140ms ease, color 140ms ease, transform 140ms ease;
+}
+
+.all-venues-button:hover {
+  border-color: rgba(36, 73, 63, 0.35);
+}
+
+.all-venues-button:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
 }
 
 .all-venues-button.is-active {
@@ -410,11 +465,13 @@ h3 {
 .source-badge.live {
   background: rgba(24, 117, 107, 0.13);
   color: var(--teal);
+  border: 1px solid rgba(24, 117, 107, 0.2);
 }
 
 .source-badge.pending {
   background: rgba(224, 168, 46, 0.18);
   color: #7f5710;
+  border: 1px solid rgba(224, 168, 46, 0.3);
 }
 
 .source-badge.empty,
@@ -424,24 +481,27 @@ h3 {
 .source-badge.permanent_truck {
   background: rgba(75, 111, 150, 0.14);
   color: var(--blue);
+  border: 1px solid rgba(75, 111, 150, 0.28);
 }
 
 .source-badge.error {
   background: rgba(217, 95, 67, 0.15);
   color: var(--tomato);
+  border: 1px solid rgba(217, 95, 67, 0.3);
 }
 
 .venue-select-button {
   min-width: 78px;
-  min-height: 34px;
+  min-height: 38px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--panel-radius);
   background: var(--panel);
   color: var(--ink);
   cursor: pointer;
   font-size: 0.78rem;
   font-weight: 800;
   padding: 0 10px;
+  transition: border-color 140ms ease, background-color 140ms ease, color 140ms ease;
 }
 
 .venue-select-button:hover,
@@ -463,7 +523,7 @@ h3 {
 
 .schedule-panel {
   min-height: 560px;
-  padding: 18px;
+  padding: var(--panel-padding);
 }
 
 .schedule-header,
@@ -472,11 +532,11 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .selected-venue-filter {
-  min-height: 32px;
+  min-height: 34px;
   margin-top: 8px;
 }
 
@@ -494,6 +554,15 @@ h3 {
   font-size: 0.8rem;
   font-weight: 800;
   padding: 0 10px;
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
+}
+
+.selected-venue-chip:hover,
+.selected-venue-chip:focus-visible {
+  border-color: rgba(24, 117, 107, 0.52);
+  background: rgba(24, 117, 107, 0.2);
+  color: var(--teal);
+  outline: none;
 }
 
 .selected-venue-chip span:first-child {
@@ -528,13 +597,14 @@ h3 {
 
 .truck-card {
   display: flex;
-  min-height: 230px;
+  min-height: 226px;
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--panel-radius);
   background: linear-gradient(180deg, #fff 0%, #fbfaf7 100%);
   padding: 16px;
+  box-shadow: 0 10px 24px rgba(24, 32, 28, 0.06);
 }
 
 .onsite-food-card {
@@ -547,7 +617,7 @@ h3 {
   min-height: 40px;
   align-items: center;
   border: 1px solid rgba(24, 117, 107, 0.28);
-  border-radius: 8px;
+  border-radius: var(--panel-radius);
   background: rgba(24, 117, 107, 0.11);
   padding: 0 12px;
 }
@@ -563,7 +633,7 @@ h3 {
 
 .card-topline {
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .meta {
@@ -571,14 +641,32 @@ h3 {
   line-height: 1.45;
 }
 
+.venue-name-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  max-width: 100%;
+  margin: 0 4px;
+  border: 1px solid rgba(36, 73, 63, 0.16);
+  border-radius: 6px;
+  background: var(--evergreen);
+  color: #fffaf1;
+  font-size: 0.9em;
+  font-weight: 800;
+  line-height: 1.1;
+  padding: 4px 10px;
+  box-shadow: 0 6px 14px rgba(36, 73, 63, 0.18);
+  vertical-align: baseline;
+}
+
 .tag-row {
-  margin: 12px 0 18px;
+  margin: 10px 0 16px;
 }
 
 .tag {
   border-radius: 999px;
   background: #f1ece3;
-  color: #58483b;
+  color: #4f3f31;
   font-size: 0.76rem;
   font-weight: 800;
   padding: 6px 8px;
@@ -599,8 +687,18 @@ h3 {
 }
 
 .save-button {
-  min-width: 86px;
+  min-width: 92px;
   padding: 0 12px;
+  transition: border-color 140ms ease, background-color 140ms ease, color 140ms ease;
+}
+
+.save-button:hover {
+  border-color: rgba(24, 117, 107, 0.4);
+}
+
+.save-button:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
 }
 
 .save-button.is-saved {
@@ -611,16 +709,18 @@ h3 {
 
 .empty-state {
   grid-column: 1 / -1;
-  border: 1px dashed #bbb5a8;
-  border-radius: 8px;
+  border: 1px dashed #c9c2b8;
+  border-radius: var(--panel-radius);
   padding: 34px;
   color: var(--muted);
+  background: #f8f6f2;
   text-align: center;
 }
 
 .directory-panel {
   margin-top: 18px;
-  padding: 18px;
+  padding: var(--panel-padding);
+  box-shadow: var(--shadow-soft);
 }
 
 .site-footer {
@@ -648,9 +748,15 @@ h3 {
   gap: 16px;
   align-items: stretch;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: var(--panel-radius);
   background: linear-gradient(180deg, #fff 0%, #fbfaf7 100%);
   padding: 14px;
+  transition: border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.directory-card:hover {
+  border-color: #cbc5bb;
+  box-shadow: 0 10px 24px rgba(24, 32, 28, 0.06);
 }
 
 .directory-card-main {
@@ -708,9 +814,15 @@ h3 {
   flex-direction: column;
   justify-content: center;
   border: 1px solid #ebe6dc;
-  border-radius: 8px;
+  border-radius: var(--panel-radius);
   background: #fffdf9;
   padding: 10px;
+  transition: border-color 140ms ease, background-color 140ms ease;
+}
+
+.directory-stats > div:hover {
+  border-color: #dbd5ca;
+  background: #fffcf7;
 }
 
 .directory-stats span,
@@ -744,6 +856,7 @@ h3 {
   cursor: pointer;
   padding: 0;
   text-align: left;
+  transition: color 140ms ease;
 }
 
 .known-stops-button:not(:disabled):hover strong,
@@ -753,8 +866,8 @@ h3 {
 }
 
 .known-stops-button:focus {
-  outline: 2px solid rgba(24, 117, 107, 0.28);
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: var(--focus);
 }
 
 .known-stops-button:disabled {
@@ -766,7 +879,7 @@ h3 {
   grid-column: 1 / -1;
   gap: 8px;
   border: 1px solid #ebe6dc;
-  border-radius: 8px;
+  border-radius: var(--panel-radius);
   background: #fffdf9;
   padding: 12px;
 }
@@ -826,6 +939,18 @@ h3 {
   .directory-links {
     justify-content: flex-start;
   }
+
+  .tracker-grid {
+    gap: 14px;
+  }
+
+  .venue-panel {
+    padding: 16px;
+  }
+
+  .schedule-panel {
+    padding: 16px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -856,5 +981,29 @@ h3 {
 
   .directory-stats {
     grid-template-columns: 1fr;
+  }
+
+  .directory-card,
+  .directory-card-main {
+    gap: 12px;
+  }
+
+  .directory-panel {
+    margin-top: 14px;
+    padding: 14px;
+  }
+
+  .venue-row {
+    grid-template-columns: 1fr;
+  }
+
+  .venue-row .venue-select-button {
+    justify-self: start;
+    min-width: 96px;
+  }
+
+  .tracker-grid,
+  .directory-stats {
+    gap: 10px;
   }
 }

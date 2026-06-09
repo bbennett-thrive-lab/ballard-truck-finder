@@ -355,6 +355,17 @@ function renderOnsiteFoodCard(venue, template, list) {
   list.appendChild(clone);
 }
 
+function renderScheduleMeta(meta, item) {
+  meta.replaceChildren(
+    document.createTextNode(`${formatTime(item.start)} - ${formatTime(item.end)} at `),
+    Object.assign(document.createElement("span"), {
+      className: "venue-name-pill",
+      textContent: item.venue
+    }),
+    document.createTextNode(` | ${item.cuisine}`)
+  );
+}
+
 function renderSchedule() {
   const template = document.querySelector("#scheduleTemplate");
   const list = document.querySelector("#scheduleList");
@@ -388,7 +399,7 @@ function renderSchedule() {
     clone.querySelector(".source-badge").textContent = sourceLabel(item.sourceStatus);
     clone.querySelector(".source-badge").classList.add(item.sourceStatus || "pending");
     clone.querySelector("h3").textContent = item.truck;
-    clone.querySelector(".meta").textContent = `${formatTime(item.start)} - ${formatTime(item.end)} at ${item.venue} | ${item.cuisine}`;
+    renderScheduleMeta(clone.querySelector(".meta"), item);
     clone.querySelector(".tag-row").innerHTML = (item.tags || []).map((tag) => `<span class="tag">${tag}</span>`).join("");
     clone.querySelector(".source-link").href = item.source;
 

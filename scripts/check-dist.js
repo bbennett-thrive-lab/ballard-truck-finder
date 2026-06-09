@@ -25,8 +25,12 @@ const [indexHtml, scheduleJson, sourcesJson] = await Promise.all([
   readFile(join(distDir, "data", "sources.json"), "utf8")
 ]);
 
-if (!indexHtml.includes("app.js?v=public-beta-1")) {
+if (!indexHtml.includes("app.js?v=venue-badge-1")) {
   throw new Error("dist/index.html is missing the expected cache-busted app script.");
+}
+
+if (!indexHtml.includes("styles.css?v=venue-badge-1")) {
+  throw new Error("dist/index.html is missing the expected cache-busted stylesheet.");
 }
 
 if (!indexHtml.includes("Schedules change. Please confirm with the venue or food truck before heading out.")) {
