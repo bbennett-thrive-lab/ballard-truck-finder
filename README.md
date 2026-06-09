@@ -74,7 +74,7 @@ This project is ready to publish as a static GitHub Pages site. The deployable a
 3. Set the build and deployment source to GitHub Actions.
 4. Push to the `main` branch or run the "Deploy GitHub Pages" workflow manually.
 
-The GitHub Actions workflow also runs every day at 12:00 UTC, which is early morning Pacific time. Each scheduled run installs dependencies, runs tests, refreshes the schedule data, builds `dist/`, verifies the artifact, and deploys the updated static site. Refreshed JSON is deployed in the Pages artifact and is not committed back to the repository.
+The GitHub Actions workflow also runs every day at 16:30 UTC, which is 9:30 AM Pacific during daylight time. Each scheduled run installs dependencies, runs tests, refreshes the schedule data, builds `dist/`, verifies the artifact, and deploys the updated static site. Refreshed JSON is deployed in the Pages artifact and is not committed back to the repository.
 
 ## Open it
 
