@@ -13,6 +13,7 @@ import {
   parseObecHomepage,
   parseStoup,
   parseUrbanFamily,
+  scrapeUrbanFamily,
   fetchWithRetry,
   formatScrapeWarnings,
   validateScrapeResults,
@@ -517,4 +518,114 @@ test("GitHub run summary surfaces partial/error sources without warning on healt
   assert.match(summary, /\*\*Obec\*\* \(error\).*Markup changed\. Review source\./);
   assert.doesNotMatch(summary, /Healthy/);
   assert.match(summary, /marked stale/);
+});
+
+async function withUrbanResponses(responses, check) {
+  const originalFetch = globalThis.fetch;
+  const calls = [];
+  globalThis.fetch = async (url, options) => {
+    calls.push({ url: String(url), options });
+    assert.ok(calls.length <= responses.length, "Unexpected extra calendar request");
+    return responses[calls.length - 1];
+  };
+  try {
+    await check(calls);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+}
+
+const urbanScrapeVenue = venues.find((venue) => venue.id === "urban-family");
+const htmlResponse = (html) => new Response(html, { headers: { "content-type": "text/html; charset=UTF-8" } });
+const pageResponse = (html, overrides = {}) => new Response(JSON.stringify({
+  id: 19015, status: "publish", link: urbanVenue.url, content: { rendered: html }, ...overrides
+}), { headers: { "content-type": "application/json" } });
+
+test("Urban Family returns validated HTML immediately with the production user agent", async () => {
+  const html = await readFile(join(fixtures, "urban-family.html"), "utf8");
+  await withUrbanResponses([htmlResponse(html)], async (calls) => {
+    const result = await scrapeUrbanFamily(urbanScrapeVenue, octoberNow);
+    assert.equal(result.sourceStatus, "live");
+    assert.equal(result.entries.length, 3);
+    assert.equal(calls.length, 1);
+    assert.equal(calls[0].options.headers["user-agent"], "BallardTruckFinder/0.1 (+local manual scraper)");
+  });
+});
+
+test("Urban Family retries unreadable HTTP 200 HTML once without speculative request changes", async () => {
+  const unreadable = await readFile(join(fixtures, "urban-family-unreadable.html"), "utf8");
+  const html = await readFile(join(fixtures, "urban-family.html"), "utf8");
+  await withUrbanResponses([htmlResponse(unreadable), htmlResponse(html)], async (calls) => {
+    const result = await scrapeUrbanFamily(urbanScrapeVenue, octoberNow);
+    assert.equal(result.sourceStatus, "live");
+    assert.match(result.message, /validated HTML retry/);
+    assert.equal(calls.length, 2);
+    assert.equal(calls[0].url, urbanVenue.url);
+    assert.deepEqual(calls[1], calls[0]);
+  });
+});
+
+test("Urban Family falls back to the verified venue REST page after two unreadable HTML responses", async () => {
+  const html = await readFile(join(fixtures, "urban-family.html"), "utf8");
+  await withUrbanResponses([htmlResponse("<main>Unreadable</main>"), htmlResponse("<main>Unreadable</main>"), pageResponse(html)], async (calls) => {
+    const result = await scrapeUrbanFamily(urbanScrapeVenue, octoberNow);
+    assert.equal(result.sourceStatus, "live");
+    assert.equal(result.entries.length, 3);
+    assert.match(result.message, /public calendar page API/);
+    assert.equal(calls.length, 3);
+    assert.equal(calls[2].url, urbanScrapeVenue.calendarApiUrl);
+    assert.ok(result.entries.every((entry) => entry.source === urbanVenue.url && entry.sourceType === "venue_calendar"));
+  });
+});
+
+test("Urban Family recognizes the published structured event attributes without CSS class names", async () => {
+  const html = await readFile(join(fixtures, "urban-family-attributes.html"), "utf8");
+  const result = parseUrbanFamily(html, urbanVenue, octoberNow);
+  assert.equal(result.sourceStatus, "live");
+  assert.equal(result.entries[0].truck, "Burger Planet");
+  assert.equal(result.entries[0].date, "2026-10-22");
+  assert.equal(result.entries[0].start, "16:00");
+  assert.equal(result.entries[0].end, "20:00");
+});
+
+test("Urban Family bounded failures retain data and report sanitized response metadata, never body text", async () => {
+  const unreadable = await readFile(join(fixtures, "urban-family-unreadable.html"), "utf8");
+  const redirected = htmlResponse(unreadable);
+  Object.defineProperty(redirected, "url", { value: "https://urbanfamilybrewing.com/challenge/?token=DO_NOT_LOG_QUERY" });
+  await withUrbanResponses([redirected, htmlResponse(unreadable), htmlResponse(unreadable)], async (calls) => {
+    const result = await scrapeUrbanFamily(urbanScrapeVenue, octoberNow);
+    assert.equal(calls.length, 3);
+    assert.equal(result.sourceStatus, "error");
+    assert.deepEqual(result.entries, []);
+    assert.match(result.message, /HTTP 200; final URL https:\/\/urbanfamilybrewing\.com\/challenge\/; content type text\/html/);
+    assert.match(result.message, /title "Just a moment\.\.\. \[redacted email\] \[redacted\]"/);
+    assert.match(result.message, /\d+ bytes; 0 calendar cells; challenge markers present/);
+    assert.doesNotMatch(result.message, /support@example|DO_NOT_LOG|var nonce/);
+    const merged = mergeScrapeResults({
+      results: [{ entries: result.entries, source: { id: "urban-family", name: urbanVenue.name, sourceStatus: result.sourceStatus, message: result.message } }],
+      previousSchedule: [{ date: "2026-10-22", start: "16:00", truck: "Burger Planet", venue: urbanVenue.name }],
+      now: octoberNow
+    });
+    assert.equal(merged.schedule.length, 1);
+    assert.equal(merged.schedule[0].dataStatus, "stale");
+  });
+});
+
+test("Urban Family rejects unrelated or malformed REST page envelopes instead of treating them as empty", async () => {
+  const html = await readFile(join(fixtures, "urban-family.html"), "utf8");
+  for (const overrides of [{ id: 19016 }, { status: "draft" }, { link: "https://example.com/" }, { content: {} }]) {
+    await withUrbanResponses([htmlResponse("Changed format"), htmlResponse("Changed format"), pageResponse(html, overrides)], async () => {
+      const result = await scrapeUrbanFamily(urbanScrapeVenue, octoberNow);
+      assert.equal(result.sourceStatus, "error");
+      assert.match(result.message, /Unrecognized public calendar page response/);
+    });
+  }
+});
+
+test("Urban Family does not convert an unreadable REST calendar into a success-empty result", async () => {
+  await withUrbanResponses([htmlResponse("Changed format"), htmlResponse("Changed format"), pageResponse("<main>No calendar markup</main>")], async () => {
+    const result = await scrapeUrbanFamily(urbanScrapeVenue, octoberNow);
+    assert.equal(result.sourceStatus, "error");
+    assert.match(result.message, /Public page API: HTTP 200/);
+  });
 });

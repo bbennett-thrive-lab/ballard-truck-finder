@@ -153,10 +153,11 @@ function getDataStatus(record) {
   const verifiedTime = Date.parse(verifiedAt);
   if (!Number.isFinite(verifiedTime)) return "unknown";
   if (Date.now() - verifiedTime > FRESHNESS_WINDOW_MS) return "stale";
-  if (record?.sourceType === "homepage_today" && record.date !== getBallardToday()) return "stale";
+  if (record?.sourceType === "homepage_today" && record.date < getBallardToday()) return "stale";
   if (record?.id === "obec") {
     const day = getBallardToday(new Date(verifiedTime));
-    if (day !== getBallardToday()) return "stale";
+    const hasCurrentListing = schedule.some((item) => item.venue === record.name && item.sourceType === "homepage_today" && item.date >= getBallardToday());
+    if (day !== getBallardToday() && !hasCurrentListing) return "stale";
   }
   return "fresh";
 }

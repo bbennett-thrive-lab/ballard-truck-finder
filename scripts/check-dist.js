@@ -25,11 +25,11 @@ const [indexHtml, scheduleJson, sourcesJson] = await Promise.all([
   readFile(join(distDir, "data", "sources.json"), "utf8")
 ]);
 
-if (!indexHtml.includes("app.js?v=tracker-v3")) {
+if (!indexHtml.includes("app.js?v=tracker-v4")) {
   throw new Error("dist/index.html is missing the expected cache-busted app script.");
 }
 
-if (!indexHtml.includes("styles.css?v=tracker-v3")) {
+if (!indexHtml.includes("styles.css?v=tracker-v4")) {
   throw new Error("dist/index.html is missing the expected cache-busted stylesheet.");
 }
 

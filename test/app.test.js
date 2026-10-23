@@ -521,7 +521,7 @@ test("frontend includes public beta publishing metadata and disclaimer", async (
     document.querySelector(".site-footer").textContent.replace(/\s+/g, " ").trim(),
     "Schedules change. Please confirm with the venue or food truck before heading out."
   );
-  assert.equal(document.querySelector('script[src="app.js?v=tracker-v3"]') !== null, true);
+  assert.equal(document.querySelector('script[src="app.js?v=tracker-v4"]') !== null, true);
 });
 
 test("frontend expires previously fresh data and avoids recommending stale stops", async () => {
@@ -537,6 +537,12 @@ test("frontend expires Obec's previous-day homepage even within the freshness wi
   const dom = await loadAppDom();
   const record = { sourceType: "homepage_today", date: isoDate(-1), sourceStatus: "live", lastScrapedAt: "2026-10-22T05:00:00.000Z" };
   assert.equal(dom.window.eval(`getDataStatus(${JSON.stringify(record)})`), "stale");
+});
+
+test("frontend respects a homepage stop explicitly listed for tomorrow", async () => {
+  const dom = await loadAppDom();
+  const record = { sourceType: "homepage_today", date: isoDate(1), sourceStatus: "live", lastScrapedAt: fixtureNow };
+  assert.equal(dom.window.eval(`getDataStatus(${JSON.stringify(record)})`), "fresh");
 });
 
 test("frontend reports invalid JSON as a loading failure", async () => {

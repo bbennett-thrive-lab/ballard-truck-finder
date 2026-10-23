@@ -12,6 +12,7 @@ const dataDir = join(rootDir, "data");
 const fixtureDir = join(rootDir, "test", "fixtures");
 const REQUEST_TIMEOUT_MS = 15_000;
 const MAX_FETCH_ATTEMPTS = 2;
+const SCRAPER_USER_AGENT = "BallardTruckFinder/0.1 (+local manual scraper)";
 const STALE_RETENTION_DAYS = 60;
 const SEATTLE_TIME_ZONE = "America/Los_Angeles";
 const seattleFormatter = new Intl.DateTimeFormat("en-CA", {
@@ -33,7 +34,9 @@ export const venues = [
     name: "Urban Family Brewing",
     address: "1103 NW 52nd St",
     url: "https://urbanfamilybrewing.com/home/calendar/",
-    adapter: parseUrbanFamily
+    calendarApiUrl: "https://urbanfamilybrewing.com/wp-json/wp/v2/pages/19015",
+    adapter: parseUrbanFamily,
+    scrape: scrapeUrbanFamily
   },
   {
     id: "yonder-bale-breaker",
@@ -588,7 +591,7 @@ export function parseStoup(html, venue, now = new Date()) {
 
 export function parseUrbanFamily(html, venue, now = new Date()) {
   const $ = cheerio.load(html);
-  const events = $(".sugar-calendar-block__event-cell");
+  const events = $(".sugar-calendar-block__event-cell, [data-eventid][data-calendarsinfo][data-daydate]");
   const entries = [];
   const issues = [];
   events.each((index, element) => {
@@ -602,7 +605,7 @@ export function parseUrbanFamily(html, venue, now = new Date()) {
       }
       if (!calendars.some((calendar) => /\bfood truck\b/i.test(calendar.name))) return;
       if (!truck) throw new Error("missing truck title");
-      const times = event.find(".sugar-calendar-block__event-cell__time time");
+      const times = event.find("time");
       const dayDate = event.attr("data-daydate");
       const startDate = times.first().attr("datetime") || (dayDate ? JSON.parse(dayDate)?.start_date?.datetime : null);
       const endDate = times.eq(1).attr("datetime");
@@ -617,6 +620,73 @@ export function parseUrbanFamily(html, venue, now = new Date()) {
     }
   });
   return calendarResult(entries, "Urban Family", issues, events.length > 0);
+}
+
+function urbanResponseDiagnostic(response, html, requestedUrl) {
+  const $ = cheerio.load(html);
+  const cells = $(".sugar-calendar-block__event-cell, [data-eventid][data-calendarsinfo][data-daydate]").length;
+  const challenge = /cf-chl-|challenge-platform|captcha|just a moment|checking your browser|verify you are human/i.test(html);
+  const finalUrl = new URL(response.url || requestedUrl);
+  const title = $("title").first().text().replace(/[\u0000-\u001f\u007f]/g, " ")
+    .replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi, "[redacted email]")
+    .replace(/\b(?:nonce|token|password|secret|api[_-]?key)\s*[:=]\s*\S+/gi, "[redacted]")
+    .replace(/\s+/g, " ").trim().slice(0, 140);
+  // Omit URL queries and body text so script nonces and contact details never enter CI logs.
+  return `HTTP ${response.status}; final URL ${finalUrl.origin}${finalUrl.pathname}; content type ${response.headers.get("content-type") || "unknown"}; title ${JSON.stringify(title)}; ${Buffer.byteLength(html)} bytes; ${cells} calendar cells; challenge markers ${challenge ? "present" : "absent"}`;
+}
+
+export async function scrapeUrbanFamily(venue, now = new Date()) {
+  if (process.env.USE_FIXTURES === "1") {
+    return parseUrbanFamily(await readFile(join(fixtureDir, `${venue.id}.html`), "utf8"), venue, now);
+  }
+  const diagnostics = [];
+  for (let attempt = 0; attempt < MAX_FETCH_ATTEMPTS; attempt += 1) {
+    try {
+      const response = await fetchWithRetry(venue.url, {
+        headers: { "user-agent": SCRAPER_USER_AGENT }
+      });
+      const html = await response.text();
+      const result = parseUrbanFamily(html, venue, now);
+      if (result.sourceStatus !== "error") {
+        if (attempt) result.message += " Recovered on validated HTML retry.";
+        return result;
+      }
+      diagnostics.push(`HTML attempt ${attempt + 1}: ${urbanResponseDiagnostic(response, html, venue.url)}`);
+    } catch (error) {
+      diagnostics.push(`HTML attempt ${attempt + 1}: ${error.message}`);
+    }
+  }
+
+  try {
+    // This public REST page is linked by the venue HTML and renders its calendar server-side.
+    const apiUrl = new URL(venue.calendarApiUrl);
+    if (apiUrl.origin !== new URL(venue.url).origin) throw new Error("Calendar endpoint must belong to the venue");
+    const response = await fetchWithRetry(apiUrl.href, {
+      headers: { accept: "application/json", "user-agent": SCRAPER_USER_AGENT }
+    });
+    const body = await response.text();
+    let payload;
+    try {
+      payload = JSON.parse(body);
+    } catch {
+      throw new Error(`Invalid public page API JSON: ${urbanResponseDiagnostic(response, body, apiUrl.href)}`);
+    }
+    if (payload?.id !== Number(apiUrl.pathname.split("/").at(-1)) || payload?.status !== "publish" ||
+        payload?.link !== venue.url || typeof payload?.content?.rendered !== "string") {
+      throw new Error("Unrecognized public calendar page response");
+    }
+    const result = parseUrbanFamily(payload.content.rendered, venue, now);
+    if (result.sourceStatus !== "error") {
+      result.message += " Retrieved from the venue's public calendar page API after unreadable HTML responses.";
+      return result;
+    }
+    diagnostics.push(`Public page API: ${urbanResponseDiagnostic(response, payload.content.rendered, apiUrl.href)}`);
+  } catch (error) {
+    diagnostics.push(`Public page API: ${error.message}`);
+  }
+  const result = calendarResult([], "Urban Family", [], false);
+  result.message += ` ${diagnostics.join(" | ")}`;
+  return result;
 }
 
 export function parseObecHomepage(html, venue, now = new Date()) {
@@ -699,7 +769,7 @@ async function scrapeBbyc(venue, now = new Date()) {
     const response = await fetchWithRetry(url, {
       headers: {
         accept: "application/json",
-        "user-agent": "BallardTruckFinder/0.1 (+local manual scraper)"
+        "user-agent": SCRAPER_USER_AGENT
       }
     });
     if (!response.ok) throw new Error(`BBYC ${month}: ${response.status} ${response.statusText}`);
@@ -815,7 +885,7 @@ export function parseLuckyEnvelope(html, venue, now = new Date()) {
 async function fetchHtml(url) {
   const response = await fetchWithRetry(url, {
     headers: {
-      "user-agent": "BallardTruckFinder/0.1 (+local manual scraper)"
+      "user-agent": SCRAPER_USER_AGENT
     }
   });
   return response.text();
