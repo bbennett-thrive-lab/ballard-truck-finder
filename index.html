@@ -8,12 +8,14 @@
     <meta property="og:title" content="Ballard Truck Finder" />
     <meta property="og:description" content="Find current Ballard food truck stops by date and venue, with source links for schedule confirmation." />
     <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://bbennett-thrive-lab.github.io/ballard-truck-finder/" />
+    <meta property="og:url" content="https://bbennett-thrive-lab.github.io/ballard-truck-finder/" />
     <meta property="og:image" content="assets/ballard-food-truck-evening.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="stylesheet" href="styles.css?v=venue-badge-1" />
+    <link rel="stylesheet" href="styles.css?v=tracker-v3" />
   </head>
   <body>
     <main class="app-shell">
@@ -38,30 +40,17 @@
         </div>
       </section>
 
-      <section class="controls" aria-label="Schedule controls">
-        <div class="control-group" role="group" aria-label="Date filter">
-          <button class="chip is-active" type="button" data-filter="today">Today</button>
-          <button class="chip" type="button" data-filter="tomorrow">Tomorrow</button>
-          <button class="chip" type="button" data-filter="week">This week</button>
-          <button class="chip" type="button" data-filter="all">All</button>
-        </div>
-        <label class="toggle">
-          <input id="openNowToggle" type="checkbox" />
-          <span>Open now</span>
-        </label>
-      </section>
-
-      <section class="tracker-grid">
-        <aside class="venue-panel" aria-label="Venue coverage">
-          <div class="section-heading">
-            <p class="eyebrow">Coverage</p>
-            <h2>Tracked venues</h2>
+      <div class="tracker-grid">
+        <section class="screen-section schedule-panel" data-screen-section="schedule" aria-label="Food truck schedule" id="schedulePanel" tabindex="-1">
+          <div class="controls" aria-label="Schedule controls">
+            <div class="control-group" role="group" aria-label="Date filter">
+              <button class="chip is-active" type="button" aria-pressed="true" data-filter="today">Today</button>
+              <button class="chip" type="button" aria-pressed="false" data-filter="tomorrow">Tomorrow</button>
+              <button class="chip" type="button" aria-pressed="false" data-filter="week">This week</button>
+              <button class="chip" type="button" aria-pressed="false" data-filter="all">All</button>
+            </div>
           </div>
-          <div class="map-panel" id="venueMap" aria-label="Ballard venue map"></div>
-          <div id="venueList" class="venue-list"></div>
-        </aside>
-
-        <section class="schedule-panel" aria-label="Food truck schedule">
+          <div id="freshnessBanner" class="freshness-banner" role="status" hidden></div>
           <div class="schedule-header">
             <div>
               <p class="eyebrow">Schedule</p>
@@ -70,19 +59,38 @@
             </div>
             <div class="count-pill" id="resultCount">0 trucks</div>
           </div>
-          <div id="scheduleList" class="schedule-list"></div>
+          <div id="scheduleList" class="schedule-list" aria-live="polite"></div>
         </section>
-      </section>
 
-      <section class="directory-panel" aria-label="Food truck directory">
-        <div class="directory-header">
-          <div>
-            <p class="eyebrow">Directory</p>
-            <h2>Food Truck Directory</h2>
+        <section class="screen-section venue-panel" data-screen-section="map" aria-label="Venue coverage">
+          <div class="section-heading">
+            <p class="eyebrow">Coverage</p>
+            <h2>Tracked venues</h2>
           </div>
-          <div class="count-pill" id="directoryCount">0 trucks</div>
-        </div>
-        <div id="directoryList" class="directory-list"></div>
+          <div class="map-panel" id="venueMap" aria-label="Ballard venue map"></div>
+          <a class="venue-results-link" id="viewVenueResults" href="#schedulePanel" hidden>View results <span aria-hidden="true">&uarr;</span></a>
+          <div id="venueList" class="venue-list"></div>
+        </section>
+      </div>
+
+      <section class="screen-section" data-screen-section="trucks" aria-label="Truck directory">
+        <section class="directory-panel" aria-label="Food truck directory">
+          <div class="directory-header">
+            <div>
+              <p class="eyebrow">Discovery</p>
+              <h2>Food truck directory</h2>
+            </div>
+            <div class="count-pill" id="directoryCount">0 trucks</div>
+          </div>
+          <div class="directory-controls">
+            <label class="directory-search-wrap">
+              <span class="sr-only">Search food trucks</span>
+              <input id="directorySearch" type="search" placeholder="Search trucks, cuisines, tags" autocomplete="off" />
+            </label>
+            <button class="chip" id="favoritesOnlyToggle" type="button" aria-pressed="false">Favorites</button>
+          </div>
+          <div id="directoryList" class="directory-list"></div>
+        </section>
       </section>
 
       <footer class="site-footer">
@@ -101,7 +109,10 @@
         <div class="tag-row"></div>
         <div class="card-footer">
           <a class="source-link" target="_blank" rel="noreferrer">Source</a>
-          <button class="save-button" type="button">Save</button>
+          <button class="favorite-button" type="button" aria-label="Favorite truck" aria-pressed="false">
+            <span class="favorite-icon" aria-hidden="true">☆</span>
+            <span>Favorite</span>
+          </button>
         </div>
       </article>
     </template>
@@ -113,7 +124,13 @@
             <div class="card-topline">
               <span class="source-badge"></span>
             </div>
-            <h3></h3>
+            <div class="directory-title-row">
+              <h3></h3>
+              <button class="favorite-button" type="button" aria-label="Favorite truck" aria-pressed="false">
+                <span class="favorite-icon" aria-hidden="true">☆</span>
+                <span>Favorite</span>
+              </button>
+            </div>
             <p class="meta"></p>
             <div class="tag-row"></div>
           </div>
@@ -140,6 +157,6 @@
     </template>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="app.js?v=venue-badge-1"></script>
+    <script src="app.js?v=tracker-v3"></script>
   </body>
 </html>

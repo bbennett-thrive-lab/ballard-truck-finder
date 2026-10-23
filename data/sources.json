@@ -1,5 +1,7 @@
 {
-  "generatedAt": "2026-06-08T23:00:31.314Z",
+  "generatedAt": "2026-10-23T01:22:52.724Z",
+  "dataStatus": "fresh",
+  "lastSuccessfulAt": "2026-10-23T01:22:52.724Z",
   "venues": [
     {
       "id": "stoup",
@@ -8,8 +10,12 @@
       "status": "live",
       "sourceStatus": "live",
       "source": "https://www.stoupbrewing.com/ballard/",
-      "message": "Parsed 29 Stoup food truck events.",
-      "lastScrapedAt": "2026-06-08T23:00:27.622Z"
+      "message": "Parsed 28 Stoup food truck events.",
+      "dataStatus": "fresh",
+      "lastAttemptedAt": "2026-10-23T01:22:52.724Z",
+      "lastSuccessfulAt": "2026-10-23T01:22:52.724Z",
+      "lastScrapedAt": "2026-10-23T01:22:52.724Z",
+      "staleReason": null
     },
     {
       "id": "urban-family",
@@ -19,7 +25,11 @@
       "sourceStatus": "live",
       "source": "https://urbanfamilybrewing.com/home/calendar/",
       "message": "Parsed 38 Urban Family food truck events.",
-      "lastScrapedAt": "2026-06-08T23:00:27.993Z"
+      "dataStatus": "fresh",
+      "lastAttemptedAt": "2026-10-23T01:22:52.724Z",
+      "lastSuccessfulAt": "2026-10-23T01:22:52.724Z",
+      "lastScrapedAt": "2026-10-23T01:22:52.724Z",
+      "staleReason": null
     },
     {
       "id": "yonder-bale-breaker",
@@ -28,8 +38,12 @@
       "status": "live",
       "sourceStatus": "live",
       "source": "https://www.bbycballard.com/food-trucks-1-1",
-      "message": "Parsed 20 BBYC calendar events.",
-      "lastScrapedAt": "2026-06-08T23:00:28.475Z"
+      "message": "Parsed 33 BBYC food truck events.",
+      "dataStatus": "fresh",
+      "lastAttemptedAt": "2026-10-23T01:22:52.724Z",
+      "lastSuccessfulAt": "2026-10-23T01:22:52.724Z",
+      "lastScrapedAt": "2026-10-23T01:22:52.724Z",
+      "staleReason": null
     },
     {
       "id": "obec",
@@ -38,8 +52,12 @@
       "status": "live",
       "sourceStatus": "live",
       "source": "https://obecbrewing.com/",
-      "message": "Parsed today's Obec food truck: Plaza Garcia.",
-      "lastScrapedAt": "2026-06-08T23:00:28.869Z"
+      "message": "Parsed today's Obec food truck: Woodshop BBQ.",
+      "dataStatus": "fresh",
+      "lastAttemptedAt": "2026-10-23T01:22:52.724Z",
+      "lastSuccessfulAt": "2026-10-23T01:22:52.724Z",
+      "lastScrapedAt": "2026-10-23T01:22:52.724Z",
+      "staleReason": null
     },
     {
       "id": "reubens",
@@ -50,7 +68,11 @@
       "source": "https://reubensbrews.com/location/ballard-taproom/",
       "foodUrl": "https://reubensbrews.com/location/ballard-taproom/",
       "message": "Reuben's Eats kitchen available; no rotating food truck schedule.",
-      "lastScrapedAt": "2026-06-08T23:00:29.322Z"
+      "dataStatus": "fresh",
+      "lastAttemptedAt": "2026-10-23T01:22:52.724Z",
+      "lastSuccessfulAt": "2026-10-23T01:22:52.724Z",
+      "lastScrapedAt": "2026-10-23T01:22:52.724Z",
+      "staleReason": null
     },
     {
       "id": "lucky-envelope",
@@ -59,8 +81,12 @@
       "status": "live",
       "sourceStatus": "live",
       "source": "https://www.luckyenvelopebrewing.com/",
-      "message": "Parsed 15 Lucky Envelope food truck events.",
-      "lastScrapedAt": "2026-06-08T23:00:29.757Z"
+      "message": "Parsed 1 Lucky Envelope food truck events.",
+      "dataStatus": "fresh",
+      "lastAttemptedAt": "2026-10-23T01:22:52.724Z",
+      "lastSuccessfulAt": "2026-10-23T01:22:52.724Z",
+      "lastScrapedAt": "2026-10-23T01:22:52.724Z",
+      "staleReason": null
     },
     {
       "id": "fair-isle",
@@ -71,7 +97,11 @@
       "source": "https://fairislebrewing.com/",
       "foodUrl": "https://fairislebrewing.com/lamareamenu/",
       "message": "Fair Isle Brewing has onsite food or food partners; no rotating truck schedule emitted.",
-      "lastScrapedAt": "2026-06-08T23:00:30.857Z"
+      "dataStatus": "fresh",
+      "lastAttemptedAt": "2026-10-23T01:22:52.724Z",
+      "lastSuccessfulAt": "2026-10-23T01:22:52.724Z",
+      "lastScrapedAt": "2026-10-23T01:22:52.724Z",
+      "staleReason": null
     },
     {
       "id": "great-notion-ballard",
@@ -82,13 +112,17 @@
       "source": "https://greatnotion.com/pages/ballard-1",
       "foodUrl": "https://greatnotion.com/pages/ballard-1",
       "message": "Great Notion Ballard has onsite food or food partners; no rotating truck schedule emitted.",
-      "lastScrapedAt": "2026-06-08T23:00:31.298Z"
+      "dataStatus": "fresh",
+      "lastAttemptedAt": "2026-10-23T01:22:52.724Z",
+      "lastSuccessfulAt": "2026-10-23T01:22:52.724Z",
+      "lastScrapedAt": "2026-10-23T01:22:52.724Z",
+      "staleReason": null
     }
   ],
   "sourceCards": [
     {
       "title": "Manual scraper",
-      "body": "5 of 8 venue adapters produced current schedule data at 2026-06-08T23:00:31.314Z.",
+      "body": "5 of 8 venue adapters produced current schedule data at 2026-10-23T01:22:54.024Z.",
       "link": "data/schedule.json"
     },
     {

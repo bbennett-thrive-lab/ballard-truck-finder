@@ -1,10 +1,12 @@
-const today = new Date();
-const TODAY = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+const BALLARD_TIME_ZONE = "America/Los_Angeles";
+const FRESHNESS_WINDOW_MS = 36 * 60 * 60 * 1000;
 
 let venues = [];
 let schedule = [];
 let venueMap = null;
 let venueMarkers = new Map();
+let sourceMetadata = {};
+const dataLoadErrors = new Set();
 
 const venueCoordinates = {
   stoup: [47.66575, -122.37202],
@@ -51,20 +53,54 @@ const fallbackSources = {
 
 const state = {
   filter: "today",
-  openNow: false,
   selectedVenueId: null,
+  directoryQuery: "",
+  directoryFavoritesOnly: false,
   expandedKnownStops: new Set(),
-  saved: new Set(JSON.parse(localStorage.getItem("savedTrucks") || "[]"))
+  favoriteTrucks: new Set(loadStoredList("favoriteTrucksV1").filter((name) => typeof name === "string").map(normalizeTruckName))
 };
 
+function loadStoredList(key) {
+  try {
+    const value = JSON.parse(localStorage.getItem(key) || "[]");
+    return Array.isArray(value) ? value : [];
+  } catch {
+    return [];
+  }
+}
+
+function getBallardNowParts(date = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: BALLARD_TIME_ZONE,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23"
+  }).formatToParts(date);
+  return Object.fromEntries(parts.filter((part) => part.type !== "literal").map((part) => [part.type, part.value]));
+}
+
+function getBallardToday(date = new Date()) {
+  const now = getBallardNowParts(date);
+  return `${now.year}-${now.month}-${now.day}`;
+}
+
+function getBallardCurrentMinutes() {
+  const now = getBallardNowParts();
+  return Number(now.hour) * 60 + Number(now.minute);
+}
+
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
+  timeZone: "UTC",
   weekday: "short",
   month: "short",
   day: "numeric"
 });
 
 function parseDate(date) {
-  return new Date(`${date}T12:00:00`);
+  return new Date(`${date}T12:00:00Z`);
 }
 
 function formatTime(time) {
@@ -79,26 +115,27 @@ function formatStop(item) {
 }
 
 function normalizeTruckName(value = "") {
-  return value.toLowerCase().replace(/&/g, "and").replace(/\s+/g, " ").trim();
-}
-
-function eventStartsAt(item) {
-  return new Date(`${item.date}T${item.start || "00:00"}:00`);
-}
-
-function eventEndsAt(item) {
-  return new Date(`${item.date}T${item.end || item.start || "23:59"}:00`);
+  const key = value.toLowerCase().replace(/[\u2018\u2019]/g, "'").replace(/&/g, "and").replace(/\s+/g, " ").trim();
+  return {
+    "kaosamai thai": "kaosamai",
+    "impeckable chicken": "impeccable chicken",
+    "impeckable": "impeccable chicken",
+    "albrijes": "alebrijes",
+    "la rivera maya": "la riviera maya",
+    "la rivera": "la riviera maya"
+  }[key] || key;
 }
 
 function addDays(date, days) {
   const next = parseDate(date);
-  next.setDate(next.getDate() + days);
+  next.setUTCDate(next.getUTCDate() + days);
   return next.toISOString().slice(0, 10);
 }
 
 function sourceLabel(status) {
   return {
     live: "Verified source",
+    stale: "Stale data",
     empty: "No current trucks",
     needs_adapter: "Needs adapter",
     no_schedule_found: "No schedule found",
@@ -109,22 +146,68 @@ function sourceLabel(status) {
   }[status] || "Needs check";
 }
 
-function isWithinFilter(item) {
-  if (state.filter === "all") return true;
-  if (state.filter === "today") return item.date === TODAY;
-  if (state.filter === "tomorrow") return item.date === addDays(TODAY, 1);
-  const end = addDays(TODAY, 6);
-  return item.date >= TODAY && item.date <= end;
+function getDataStatus(record) {
+  if (record?.dataStatus === "stale") return "stale";
+  if (record?.dataStatus === "error" || record?.sourceStatus === "error") return "error";
+  const verifiedAt = record?.lastVerifiedAt || record?.lastSuccessfulAt || record?.lastScrapedAt || sourceMetadata.generatedAt;
+  const verifiedTime = Date.parse(verifiedAt);
+  if (!Number.isFinite(verifiedTime)) return "unknown";
+  if (Date.now() - verifiedTime > FRESHNESS_WINDOW_MS) return "stale";
+  if (record?.sourceType === "homepage_today" && record.date !== getBallardToday()) return "stale";
+  if (record?.id === "obec") {
+    const day = getBallardToday(new Date(verifiedTime));
+    if (day !== getBallardToday()) return "stale";
+  }
+  return "fresh";
 }
 
-function isOpenNow(item) {
-  const now = new Date();
-  const currentDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
-  if (item.date !== currentDate) return false;
-  const currentMinutes = now.getHours() * 60 + now.getMinutes();
-  const [startHour, startMinute] = item.start.split(":").map(Number);
-  const [endHour, endMinute] = item.end.split(":").map(Number);
-  return currentMinutes >= startHour * 60 + startMinute && currentMinutes <= endHour * 60 + endMinute;
+function sourceAppearance(record) {
+  const status = getDataStatus(record);
+  return status === "fresh" ? record.sourceStatus || "pending" : status === "unknown" ? "pending" : status;
+}
+
+function recordLabel(record) {
+  const status = getDataStatus(record);
+  if (status === "stale") return "Stale data";
+  if (status === "error") return "Source error";
+  if (status === "unknown" && !["permanent_food", "permanent_truck"].includes(record?.sourceStatus)) return "Needs check";
+  return sourceLabel(record?.sourceStatus);
+}
+
+function safeHttpUrl(value) {
+  try {
+    const url = new URL(value, window.location.href);
+    return ["http:", "https:"].includes(url.protocol) ? url.href : "#";
+  } catch {
+    return "#";
+  }
+}
+
+function renderTags(container, tags = []) {
+  container.replaceChildren();
+  for (const tag of tags) {
+    const element = document.createElement("span");
+    element.className = "tag";
+    element.textContent = tag;
+    container.appendChild(element);
+  }
+}
+
+function isWithinFilter(item) {
+  const today = getBallardToday();
+  if (state.filter === "all") return true;
+  if (state.filter === "today") return item.date === today;
+  if (state.filter === "tomorrow") return item.date === addDays(today, 1);
+  const end = addDays(today, 6);
+  return item.date >= today && item.date <= end;
+}
+
+function isEventEnded(item) {
+  const today = getBallardToday();
+  if (item.date < today) return true;
+  if (item.date > today) return false;
+  const [endHour, endMinute] = (item.end || item.start || "23:59").split(":").map(Number);
+  return getBallardCurrentMinutes() > endHour * 60 + endMinute;
 }
 
 function getFilteredSchedule() {
@@ -132,12 +215,20 @@ function getFilteredSchedule() {
   return schedule
     .filter(isWithinFilter)
     .filter((item) => !selectedVenue || item.venue === selectedVenue.name)
-    .filter((item) => !state.openNow || isOpenNow(item))
     .sort((a, b) => `${a.date}${a.start}`.localeCompare(`${b.date}${b.start}`));
 }
 
 function uniqueValues(values) {
   return [...new Set(values.filter(Boolean))];
+}
+
+function preserveFocus(update) {
+  const key = document.activeElement?.dataset.focusKey;
+  update();
+  if (!key) return;
+  const replacement = [...document.querySelectorAll("[data-focus-key]")].find((element) => element.dataset.focusKey === key);
+  const fallback = key.startsWith("directory-") ? document.querySelector("#favoritesOnlyToggle") : document.querySelector("#schedulePanel");
+  (replacement || fallback)?.focus({ preventScroll: true });
 }
 
 function buildVenueStops(events) {
@@ -152,7 +243,6 @@ function buildVenueStops(events) {
 }
 
 function buildTruckDirectory() {
-  const now = new Date();
   const truckMap = new Map();
 
   schedule.forEach((item) => {
@@ -181,8 +271,8 @@ function buildTruckDirectory() {
 
   const scheduleTrucks = [...truckMap.values()].map((truck) => {
     const events = truck.events.sort((a, b) => `${a.date}${a.start}`.localeCompare(`${b.date}${b.start}`));
-    const upcoming = events.filter((item) => eventEndsAt(item) >= now);
-    const past = events.filter((item) => eventEndsAt(item) < now);
+    const upcoming = events.filter((item) => !isEventEnded(item));
+    const past = events.filter((item) => isEventEnded(item));
     const statusEvent = upcoming[0] || past[past.length - 1] || events[events.length - 1];
 
     return {
@@ -194,78 +284,107 @@ function buildTruckDirectory() {
       nextStop: upcoming[0] || null,
       lastSeen: past[past.length - 1] || null,
       sourceStatus: statusEvent?.sourceStatus || "pending",
+      dataStatus: statusEvent ? getDataStatus(statusEvent) : "fresh",
+      isFavorite: state.favoriteTrucks.has(normalizeTruckName(truck.name)),
       venueStops: buildVenueStops(events)
     };
   });
   const scheduleKeys = new Set(scheduleTrucks.map((truck) => normalizeTruckName(truck.name)));
-  const manualTrucks = manualTruckProfiles.filter((truck) => !scheduleKeys.has(normalizeTruckName(truck.name)));
+  const manualTrucks = manualTruckProfiles
+    .filter((truck) => !scheduleKeys.has(normalizeTruckName(truck.name)))
+    .map((truck) => ({ ...truck, isFavorite: state.favoriteTrucks.has(normalizeTruckName(truck.name)) }));
 
   return [...scheduleTrucks, ...manualTrucks].sort((a, b) => a.name.localeCompare(b.name));
 }
 
 function getFilteredDirectory() {
-  return buildTruckDirectory();
+  const query = state.directoryQuery.trim().toLowerCase();
+  return buildTruckDirectory().filter((truck) => {
+    if (state.directoryFavoritesOnly && !truck.isFavorite) return false;
+    if (!query) return true;
+    const haystack = [truck.name, ...truck.cuisines, ...truck.tags, ...truck.venues].join(" ").toLowerCase();
+    return haystack.includes(query);
+  });
 }
 
 function renderVenues() {
   const venueList = document.querySelector("#venueList");
-  venueList.innerHTML = `
-    <button class="all-venues-button ${state.selectedVenueId ? "" : "is-active"}" type="button" data-venue-id="">
-      <span>All venues</span>
-      <span>${venues.length}</span>
-    </button>
-    ${venues.map((venue) => {
+  venueList.replaceChildren();
+
+  const allVenues = document.createElement("button");
+  allVenues.className = `all-venues-button ${state.selectedVenueId ? "" : "is-active"}`;
+  allVenues.type = "button";
+  allVenues.dataset.focusKey = "all-venues";
+  allVenues.textContent = `All venues (${venues.length})`;
+  allVenues.addEventListener("click", () => selectVenue(null));
+  venueList.appendChild(allVenues);
+
+  venues.forEach((venue) => {
     const isSelected = state.selectedVenueId === venue.id;
-    return `
-    <div class="venue-row ${isSelected ? "is-selected" : ""}" role="button" tabindex="0" data-venue-id="${venue.id}">
-      <div>
-        <a class="venue-link" href="${venue.source}" target="_blank" rel="noreferrer">${venue.name}</a>
-        <span>${venue.address}</span>
-      </div>
-      <button class="venue-select-button ${isSelected ? "is-selected" : ""}" type="button">${isSelected ? "Selected" : "Select"}</button>
-    </div>
-  `;
-  }).join("")}`;
+    const row = document.createElement("div");
+    row.className = `venue-row ${isSelected ? "is-selected" : ""}`;
+    row.dataset.venueId = venue.id;
+    row.dataset.focusKey = `venue:${venue.id}`;
+    row.setAttribute("role", "button");
+    row.setAttribute("aria-pressed", String(isSelected));
+    row.tabIndex = 0;
 
-  venueList.querySelectorAll(".venue-link").forEach((link) => {
-    link.addEventListener("click", (event) => {
+    const details = document.createElement("div");
+    const link = document.createElement("a");
+    link.className = "venue-link";
+    link.dataset.focusKey = `venue-link:${venue.id}`;
+    link.href = safeHttpUrl(venue.source);
+    link.target = "_blank";
+    link.rel = "noreferrer";
+    link.textContent = venue.name;
+    link.addEventListener("click", (event) => event.stopPropagation());
+    const address = document.createElement("span");
+    address.textContent = venue.address;
+    details.append(link, address);
+
+    const selectButton = document.createElement("button");
+    selectButton.className = `venue-select-button ${isSelected ? "is-selected" : ""}`;
+    selectButton.type = "button";
+    selectButton.dataset.focusKey = `venue-select:${venue.id}`;
+    selectButton.textContent = isSelected ? "Selected" : "Select";
+    selectButton.setAttribute("aria-label", `${isSelected ? "Clear" : "Select"} ${venue.name}`);
+    selectButton.addEventListener("click", (event) => {
       event.stopPropagation();
+      selectVenue(venue.id);
     });
-  });
 
-  venueList.querySelectorAll(".venue-select-button").forEach((button) => {
-    button.addEventListener("click", (event) => {
-      event.stopPropagation();
-      selectVenue(button.closest("[data-venue-id]").dataset.venueId || null);
-    });
-    button.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.stopPropagation();
-      }
-    });
-  });
-
-  venueList.querySelectorAll("[data-venue-id]").forEach((row) => {
-    row.addEventListener("click", () => {
-      selectVenue(row.dataset.venueId || null);
-    });
+    row.append(details, selectButton);
+    row.addEventListener("click", () => selectVenue(venue.id));
     row.addEventListener("keydown", (event) => {
+      if (event.target !== row) return;
       if (event.key !== "Enter" && event.key !== " ") return;
       event.preventDefault();
-      selectVenue(row.dataset.venueId || null);
+      selectVenue(venue.id);
     });
+    venueList.appendChild(row);
   });
 }
 
 function makeMarkerIcon(venue) {
-  const status = venue.sourceStatus || venue.status || "pending";
+  const status = sourceAppearance(venue);
   const selected = state.selectedVenueId === venue.id ? "is-selected" : "";
   return L.divIcon({
     className: "",
     html: `<span class="venue-marker ${status} ${selected}" aria-hidden="true"></span>`,
-    iconSize: [28, 28],
-    iconAnchor: [14, 14]
+    iconSize: [18, 18],
+    iconAnchor: [9, 9]
   });
+}
+
+function venueTooltip(venue) {
+  const label = document.createElement("span");
+  label.textContent = `${venue.name} - ${recordLabel(venue)}`;
+  return label;
+}
+
+function fitVenueBounds() {
+  const coordinates = venues.map((venue) => venueCoordinates[venue.id]).filter(Boolean);
+  if (venueMap && coordinates.length) venueMap.fitBounds(coordinates, { padding: [12, 12], maxZoom: 17, animate: false });
 }
 
 function renderVenueMap() {
@@ -277,11 +396,14 @@ function renderVenueMap() {
   }
 
   mapEl.classList.remove("is-hidden");
-  if (!venueMap) {
+  const firstRender = !venueMap;
+  if (firstRender) {
     venueMap = L.map(mapEl, {
       attributionControl: false,
-      scrollWheelZoom: false
-    }).setView([47.66505, -122.37055], 15);
+      scrollWheelZoom: false,
+      zoomSnap: 0.1,
+      zoomDelta: 0.5
+    }).setView([47.66505, -122.37055], 17);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
@@ -296,24 +418,28 @@ function renderVenueMap() {
     const existing = venueMarkers.get(venue.id);
     if (existing) {
       existing.setIcon(makeMarkerIcon(venue));
+      existing.setTooltipContent(venueTooltip(venue));
       return;
     }
-    const marker = L.marker(coords, { icon: makeMarkerIcon(venue), title: venue.name })
+    const marker = L.marker(coords, { icon: makeMarkerIcon(venue), title: venue.name, riseOnHover: true })
       .addTo(venueMap)
-      .bindTooltip(`${venue.name} - ${sourceLabel(venue.sourceStatus || venue.status)}`, {
+      .bindTooltip(venueTooltip(venue), {
         direction: "top",
         offset: [0, -12]
       });
     marker.on("click", () => selectVenue(venue.id));
     venueMarkers.set(venue.id, marker);
   });
+  if (firstRender) fitVenueBounds();
 }
 
 function selectVenue(venueId) {
   state.selectedVenueId = venueId && state.selectedVenueId !== venueId ? venueId : null;
-  renderVenues();
-  renderVenueMap();
-  renderSchedule();
+  preserveFocus(() => {
+    renderVenues();
+    renderVenueMap();
+    renderSchedule();
+  });
 }
 
 function renderSelectedVenueFilter() {
@@ -321,18 +447,26 @@ function renderSelectedVenueFilter() {
   if (!filter) return;
 
   const selectedVenue = venues.find((venue) => venue.id === state.selectedVenueId);
+  const resultsLink = document.querySelector("#viewVenueResults");
+  if (resultsLink) resultsLink.hidden = !selectedVenue;
   if (!selectedVenue) {
-    filter.innerHTML = "";
+    filter.replaceChildren();
     return;
   }
 
-  filter.innerHTML = `
-    <button class="selected-venue-chip" type="button" aria-label="Clear venue filter">
-      <span>Venue: ${selectedVenue.name}</span>
-      <span aria-hidden="true">x</span>
-    </button>
-  `;
-  filter.querySelector("button").addEventListener("click", () => selectVenue(null));
+  const chip = document.createElement("button");
+  chip.className = "selected-venue-chip";
+  chip.type = "button";
+  chip.dataset.focusKey = "selected-venue-filter";
+  chip.setAttribute("aria-label", "Clear venue filter");
+  const label = document.createElement("span");
+  label.textContent = `Venue: ${selectedVenue.name}`;
+  const close = document.createElement("span");
+  close.setAttribute("aria-hidden", "true");
+  close.textContent = "x";
+  chip.append(label, close);
+  chip.addEventListener("click", () => selectVenue(null));
+  filter.replaceChildren(chip);
 }
 
 function renderOnsiteFoodCard(venue, template, list) {
@@ -340,19 +474,47 @@ function renderOnsiteFoodCard(venue, template, list) {
   const foodUrl = venue.foodUrl || venue.menuUrl || venue.source;
 
   clone.querySelector(".date-badge").textContent = "Venue";
-  clone.querySelector(".source-badge").textContent = sourceLabel(venue.sourceStatus);
-  clone.querySelector(".source-badge").classList.add(venue.sourceStatus || "pending");
+  clone.querySelector(".source-badge").textContent = recordLabel(venue);
+  clone.querySelector(".source-badge").classList.add(sourceAppearance(venue));
   clone.querySelector("h3").textContent = "Onsite food";
   clone.querySelector(".meta").textContent = `${venue.name} | ${venue.address}`;
-  clone.querySelector(".tag-row").innerHTML = `<span class="tag">Menu available</span>`;
+  renderTags(clone.querySelector(".tag-row"), ["Menu available"]);
 
   const sourceLink = clone.querySelector(".source-link");
-  sourceLink.href = foodUrl;
+  sourceLink.href = safeHttpUrl(foodUrl);
   sourceLink.textContent = venue.foodUrl || venue.menuUrl ? "Menu" : "Food info";
 
-  clone.querySelector(".save-button").remove();
+  clone.querySelector(".favorite-button").remove();
   clone.querySelector(".truck-card").classList.add("onsite-food-card");
   list.appendChild(clone);
+}
+
+function toggleFavorite(truckName) {
+  const key = normalizeTruckName(truckName);
+  if (state.favoriteTrucks.has(key)) {
+    state.favoriteTrucks.delete(key);
+  } else {
+    state.favoriteTrucks.add(key);
+  }
+  try {
+    localStorage.setItem("favoriteTrucksV1", JSON.stringify([...state.favoriteTrucks]));
+  } catch {
+    // Favorites still work for this visit when browser storage is unavailable.
+  }
+  preserveFocus(() => {
+    renderSchedule();
+    renderDirectory();
+  });
+}
+
+function renderFavoriteButton(button, truckName) {
+  const isFavorite = state.favoriteTrucks.has(normalizeTruckName(truckName));
+  button.setAttribute("aria-pressed", String(isFavorite));
+  button.setAttribute("aria-label", `${isFavorite ? "Remove" : "Add"} ${truckName} ${isFavorite ? "from" : "to"} favorites`);
+  button.classList.toggle("is-favorite", isFavorite);
+  button.querySelector(".favorite-icon").textContent = isFavorite ? "★" : "☆";
+  button.querySelector("span:last-child").textContent = isFavorite ? "Favorited" : "Favorite";
+  button.addEventListener("click", () => toggleFavorite(truckName));
 }
 
 function renderScheduleMeta(meta, item) {
@@ -388,33 +550,25 @@ function renderSchedule() {
   }
 
   if (!items.length) {
-    list.innerHTML = `<div class="empty-state">No trucks match those filters yet. Try the full week or another venue.</div>`;
+    const outdated = venues.some((venue) => (!selectedVenue || venue.id === selectedVenue.id) && ["stale", "error", "unknown"].includes(getDataStatus(venue)));
+    list.innerHTML = `<div class="empty-state">${dataLoadErrors.size
+      ? "The schedule could not be loaded. Reload the page or check the venue website."
+      : outdated ? "No current stops are confirmed for these filters. Some schedules need an update; check the venue website."
+        : "No trucks are listed for these filters. Try the next seven days or another venue."}</div>`;
     return;
   }
 
   items.forEach((item) => {
     const clone = template.content.cloneNode(true);
-    const savedKey = `${item.date}-${item.truck}-${item.venue}`;
+    clone.querySelector(".favorite-button").dataset.focusKey = `schedule-favorite:${item.date}:${item.start}:${item.venue}:${normalizeTruckName(item.truck)}`;
     clone.querySelector(".date-badge").textContent = dateFormatter.format(parseDate(item.date));
-    clone.querySelector(".source-badge").textContent = sourceLabel(item.sourceStatus);
-    clone.querySelector(".source-badge").classList.add(item.sourceStatus || "pending");
+    clone.querySelector(".source-badge").textContent = recordLabel(item);
+    clone.querySelector(".source-badge").classList.add(sourceAppearance(item));
     clone.querySelector("h3").textContent = item.truck;
     renderScheduleMeta(clone.querySelector(".meta"), item);
-    clone.querySelector(".tag-row").innerHTML = (item.tags || []).map((tag) => `<span class="tag">${tag}</span>`).join("");
-    clone.querySelector(".source-link").href = item.source;
-
-    const saveButton = clone.querySelector(".save-button");
-    saveButton.textContent = state.saved.has(savedKey) ? "Saved" : "Save";
-    saveButton.classList.toggle("is-saved", state.saved.has(savedKey));
-    saveButton.addEventListener("click", () => {
-      if (state.saved.has(savedKey)) {
-        state.saved.delete(savedKey);
-      } else {
-        state.saved.add(savedKey);
-      }
-      localStorage.setItem("savedTrucks", JSON.stringify([...state.saved]));
-      renderSchedule();
-    });
+    renderTags(clone.querySelector(".tag-row"), item.tags || []);
+    clone.querySelector(".source-link").href = safeHttpUrl(item.source);
+    renderFavoriteButton(clone.querySelector(".favorite-button"), item.truck);
 
     list.appendChild(clone);
   });
@@ -430,31 +584,46 @@ function renderDirectory() {
   document.querySelector("#directoryCount").textContent = `${trucks.length} ${trucks.length === 1 ? "truck" : "trucks"}`;
 
   if (!trucks.length) {
-    list.innerHTML = `<div class="empty-state">No food trucks are in the directory yet.</div>`;
+    list.innerHTML = `<div class="empty-state">${state.directoryFavoritesOnly ? "No favorite trucks match this search." : state.directoryQuery ? "No trucks match this search." : "No food trucks are in the directory yet."}</div>`;
     return;
   }
 
   trucks.forEach((truck) => {
     const clone = template.content.cloneNode(true);
+    const truckKey = normalizeTruckName(truck.name);
+    clone.querySelector(".favorite-button").dataset.focusKey = `directory-favorite:${truckKey}`;
     const cuisineLabel = truck.cuisines.join(", ") || "Cuisine not listed";
     const venueLabel = truck.venues.join(", ");
     const metaParts = [cuisineLabel, venueLabel].filter(Boolean);
-    const links = [];
 
-    if (truck.truckUrl) links.push(`<a href="${truck.truckUrl}" target="_blank" rel="noreferrer">Truck site</a>`);
-    if (truck.menuUrl) links.push(`<a href="${truck.menuUrl}" target="_blank" rel="noreferrer">Menu</a>`);
-
-    clone.querySelector(".source-badge").textContent = sourceLabel(truck.sourceStatus);
-    clone.querySelector(".source-badge").classList.add(truck.sourceStatus || "pending");
+    clone.querySelector(".source-badge").textContent = recordLabel(truck);
+    clone.querySelector(".source-badge").classList.add(sourceAppearance(truck));
     clone.querySelector("h3").textContent = truck.name;
+    renderFavoriteButton(clone.querySelector(".favorite-button"), truck.name);
     clone.querySelector(".meta").textContent = metaParts.join(" | ");
-    clone.querySelector(".tag-row").innerHTML = truck.tags.slice(0, 6).map((tag) => `<span class="tag">${tag}</span>`).join("");
-    clone.querySelector(".directory-links").innerHTML = links.join("") || `<span>No truck link yet</span>`;
+    renderTags(clone.querySelector(".tag-row"), truck.tags.slice(0, 6));
+    const linksContainer = clone.querySelector(".directory-links");
+    linksContainer.replaceChildren();
+    for (const [url, label] of [[truck.truckUrl, "Truck site"], [truck.menuUrl, "Menu"]]) {
+      if (!url) continue;
+      const link = document.createElement("a");
+      link.href = safeHttpUrl(url);
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      link.textContent = label;
+      link.dataset.focusKey = `directory-link:${truckKey}:${label}`;
+      linksContainer.appendChild(link);
+    }
+    if (!linksContainer.childElementCount) {
+      const empty = document.createElement("span");
+      empty.textContent = "No truck link yet";
+      linksContainer.appendChild(empty);
+    }
     clone.querySelector(".next-stop").textContent = truck.nextStopLabel || (truck.nextStop ? formatStop(truck.nextStop) : "No upcoming stop found");
     clone.querySelector(".last-seen").textContent = truck.lastSeenLabel || (truck.lastSeen ? formatStop(truck.lastSeen) : "Not seen yet in current data");
 
-    const truckKey = normalizeTruckName(truck.name);
     const knownStopsButton = clone.querySelector(".known-stops-button");
+    knownStopsButton.dataset.focusKey = `directory-stops:${truckKey}`;
     const stopsList = clone.querySelector(".known-stops-list");
     knownStopsButton.querySelector(".appearance-count").textContent = truck.appearanceLabel || `${truck.events.length} ${truck.events.length === 1 ? "stop" : "stops"}`;
 
@@ -465,19 +634,24 @@ function renderDirectory() {
       const expanded = state.expandedKnownStops.has(truckKey);
       knownStopsButton.setAttribute("aria-expanded", String(expanded));
       stopsList.hidden = !expanded;
-      stopsList.innerHTML = truck.venueStops.map((stop) => `
-        <div class="known-stop-row">
-          <span>${stop.venue}</span>
-          <strong>${stop.count} ${stop.count === 1 ? "stop" : "stops"}</strong>
-        </div>
-      `).join("");
+      stopsList.replaceChildren();
+      truck.venueStops.forEach((stop) => {
+        const row = document.createElement("div");
+        row.className = "known-stop-row";
+        const venueName = document.createElement("span");
+        venueName.textContent = stop.venue;
+        const count = document.createElement("strong");
+        count.textContent = `${stop.count} ${stop.count === 1 ? "stop" : "stops"}`;
+        row.append(venueName, count);
+        stopsList.appendChild(row);
+      });
       knownStopsButton.addEventListener("click", () => {
         if (state.expandedKnownStops.has(truckKey)) {
           state.expandedKnownStops.delete(truckKey);
         } else {
           state.expandedKnownStops.add(truckKey);
         }
-        renderDirectory();
+        preserveFocus(renderDirectory);
       });
     }
 
@@ -485,16 +659,50 @@ function renderDirectory() {
   });
 }
 
-function renderTopPick(generatedAt) {
-  const todayItems = schedule.filter((item) => item.date === TODAY);
-  const upcomingItems = schedule.filter((item) => item.date >= TODAY);
-  const topPick = todayItems[0] || upcomingItems[0];
+function formatFreshness(iso) {
+  if (!iso) return "not available";
+  const ageMinutes = Math.max(0, Math.round((Date.now() - new Date(iso).getTime()) / 60000));
+  if (ageMinutes < 60) return `${ageMinutes} min ago`;
+  if (ageMinutes < 1440) return `${Math.round(ageMinutes / 60)} hr ago`;
+  return `${Math.round(ageMinutes / 1440)} days ago`;
+}
+
+function renderFreshnessBanner(payload) {
+  const banner = document.querySelector("#freshnessBanner");
+  if (!banner) return;
+  const sourceList = payload.venues || [];
+  const scheduleSources = sourceList.filter((source) => !["permanent_food", "permanent_truck"].includes(source.sourceStatus));
+  const freshCount = scheduleSources.filter((source) => getDataStatus(source) === "fresh").length;
+  const staleCount = sourceList.filter((source) => getDataStatus(source) === "stale").length;
+  const errorCount = sourceList.filter((source) => getDataStatus(source) === "error").length;
+  const unknownCount = sourceList.filter((source) => getDataStatus(source) === "unknown").length;
+  const hasWarning = dataLoadErrors.size > 0 || staleCount > 0 || errorCount > 0 || unknownCount > 0 || payload.dataStatus === "partial";
+  banner.hidden = !hasWarning;
+  banner.className = `freshness-banner ${errorCount ? "is-error" : "is-stale"}`;
+  if (!hasWarning) return;
+  if (dataLoadErrors.size) {
+    banner.textContent = "Schedule data could not be loaded. Reload the page or use the venue websites to confirm today's food.";
+    banner.className = "freshness-banner is-error";
+    return;
+  }
+  banner.textContent = `${freshCount} of ${scheduleSources.length} schedules fresh. Updated ${formatFreshness(payload.lastSuccessfulAt || payload.generatedAt)}. Please confirm stale venues before heading out.`;
+}
+
+function renderTopPick(payload) {
+  const today = getBallardToday();
+  const todayItems = schedule
+    .filter((item) => item.date === today && !isEventEnded(item) && getDataStatus(item) === "fresh")
+    .sort((a, b) => `${a.date}${a.start}`.localeCompare(`${b.date}${b.start}`));
+  const topPick = todayItems[0];
   document.querySelector("#topPick").textContent = topPick
     ? `${topPick.truck} at ${topPick.venue}, ${formatTime(topPick.start)} - ${formatTime(topPick.end)}`
-    : "No verified trucks for today yet";
-  document.querySelector("#freshness").textContent = generatedAt
-    ? `Updated ${dateFormatter.format(new Date(generatedAt))}`
-    : "Run npm run scrape";
+    : schedule.some((item) => item.date === today && !isEventEnded(item) && getDataStatus(item) !== "fresh")
+      ? "Today's schedule needs an update"
+      : schedule.some((item) => item.date === today) ? "No more trucks tonight" : "No verified trucks for today yet";
+  document.querySelector("#freshness").textContent = payload.lastSuccessfulAt || payload.generatedAt
+    ? `Updated ${formatFreshness(payload.lastSuccessfulAt || payload.generatedAt)}`
+    : "Update time unavailable";
+  renderFreshnessBanner(payload);
 }
 
 function wireControls() {
@@ -502,37 +710,71 @@ function wireControls() {
     button.addEventListener("click", () => {
       state.filter = button.dataset.filter;
       document.querySelectorAll("[data-filter]").forEach((chip) => chip.classList.remove("is-active"));
+      document.querySelectorAll("[data-filter]").forEach((chip) => chip.setAttribute("aria-pressed", String(chip === button)));
       button.classList.add("is-active");
       renderSchedule();
+      renderTopPick(sourceMetadata);
     });
   });
 
-  document.querySelector("#openNowToggle").addEventListener("change", (event) => {
-    state.openNow = event.target.checked;
+  document.querySelector("#directorySearch").addEventListener("input", (event) => {
+    state.directoryQuery = event.target.value;
+    renderDirectory();
+  });
+
+  document.querySelector("#favoritesOnlyToggle").addEventListener("click", (event) => {
+    state.directoryFavoritesOnly = !state.directoryFavoritesOnly;
+    event.currentTarget.setAttribute("aria-pressed", String(state.directoryFavoritesOnly));
+    event.currentTarget.classList.toggle("is-active", state.directoryFavoritesOnly);
+    renderDirectory();
+  });
+
+  window.addEventListener("resize", () => {
+    venueMap?.invalidateSize();
+    fitVenueBounds();
+  });
+
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) refreshClock();
+  });
+  window.setInterval(refreshClock, 60_000);
+}
+
+function refreshClock() {
+  if (document.hidden) return;
+  preserveFocus(() => {
+    renderTopPick(sourceMetadata);
     renderSchedule();
+    renderDirectory();
+    renderVenues();
+    renderVenueMap();
   });
 }
 
-async function loadJson(url, fallback) {
+async function loadJson(url, fallback, validate) {
   try {
     const response = await fetch(url, { cache: "no-store" });
     if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-    return response.json();
+    const payload = await response.json();
+    if (!validate(payload)) throw new Error("Unexpected data format");
+    return payload;
   } catch (error) {
     console.warn(`Unable to load ${url}:`, error);
+    dataLoadErrors.add(url);
     return fallback;
   }
 }
 
 async function init() {
   const [loadedSchedule, loadedSources] = await Promise.all([
-    loadJson("data/schedule.json", []),
-    loadJson("data/sources.json", fallbackSources)
+    loadJson("data/schedule.json", [], Array.isArray),
+    loadJson("data/sources.json", fallbackSources, (payload) => payload && Array.isArray(payload.venues))
   ]);
   schedule = Array.isArray(loadedSchedule) ? loadedSchedule : [];
   venues = loadedSources.venues || fallbackSources.venues;
+  sourceMetadata = loadedSources;
 
-  renderTopPick(loadedSources.generatedAt);
+  renderTopPick(loadedSources);
   renderVenues();
   renderVenueMap();
   wireControls();

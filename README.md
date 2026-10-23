@@ -2,14 +2,16 @@
 
 A static prototype for a better Ballard food truck tracker. It opens directly in a browser and is designed around source freshness, venue coverage, and fast discovery.
 
+Live site: https://bbennett-thrive-lab.github.io/ballard-truck-finder/
+
 ## What is included
 
-- Date filters for today, tomorrow, this week, and all known schedule items.
-- An "open now" toggle.
+- Schedule, venue map, and truck directory sections on one screen with date filters for today, tomorrow, this week, and all known schedule items.
+- Freshness warnings when an update fails or the last verification is older than 36 hours. Obec's homepage truck is valid only for its Seattle calendar date.
 - Venue coverage status so verified data and future adapters are not mixed together.
-- Food truck directory with next stop, last seen, known venues, and source links.
-- Saved trucks using browser local storage.
-- A source-adapter plan for turning this into a live aggregator.
+- Food truck directory with search, truck-level favorites, next stop, last seen, known venues, and source links.
+- Seattle-timezone comparisons for Today, event status, and the hero recommendation. Stale data is never promoted as tonight's recommendation.
+- A map beside the schedule on desktop and a return-to-results link on mobile.
 
 ## Current data
 
@@ -45,6 +47,8 @@ The scraper writes `data/schedule.json` and `data/sources.json`. Each adapter em
 }
 ```
 
+Refreshes run concurrently with a 15-second timeout and one retry per venue. A successful empty result is treated as authoritative. If one venue fails, its last successful entries are retained for up to 60 days and marked stale; if every rotating source fails, the existing JSON is left untouched and the refresh exits with an error.
+
 Run parser fixture tests:
 
 ```bash
@@ -74,7 +78,7 @@ This project is ready to publish as a static GitHub Pages site. The deployable a
 3. Set the build and deployment source to GitHub Actions.
 4. Push to the `main` branch or run the "Deploy GitHub Pages" workflow manually.
 
-The GitHub Actions workflow also runs every day at 16:30 UTC, which is 9:30 AM Pacific during daylight time. Each scheduled run installs dependencies, runs tests, refreshes the schedule data, builds `dist/`, verifies the artifact, and deploys the updated static site. Refreshed JSON is deployed in the Pages artifact and is not committed back to the repository.
+The GitHub Actions workflow also runs every day at 16:17 UTC, which is 9:17 AM Pacific during daylight time and 8:17 AM during standard time. It uses Seattle's timezone while parsing dates. Each scheduled run installs dependencies, runs tests, refreshes the schedule data, builds `dist/`, verifies the artifact, commits accepted JSON back to `main` with `[skip ci]`, and deploys the updated static site. Saving the refresh keeps a last-known-good baseline and regular repository activity. Deployment checks reject a build when every rotating schedule is older than 36 hours. Source failures appear in the workflow summary and on the site.
 
 ## Open it
 

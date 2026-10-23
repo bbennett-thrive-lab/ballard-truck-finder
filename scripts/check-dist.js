@@ -25,11 +25,11 @@ const [indexHtml, scheduleJson, sourcesJson] = await Promise.all([
   readFile(join(distDir, "data", "sources.json"), "utf8")
 ]);
 
-if (!indexHtml.includes("app.js?v=venue-badge-1")) {
+if (!indexHtml.includes("app.js?v=tracker-v3")) {
   throw new Error("dist/index.html is missing the expected cache-busted app script.");
 }
 
-if (!indexHtml.includes("styles.css?v=venue-badge-1")) {
+if (!indexHtml.includes("styles.css?v=tracker-v3")) {
   throw new Error("dist/index.html is missing the expected cache-busted stylesheet.");
 }
 
@@ -46,6 +46,18 @@ if (!Array.isArray(schedule)) {
 
 if (!sources || !Array.isArray(sources.venues)) {
   throw new Error("dist/data/sources.json must contain a venues array.");
+}
+
+const rotatingSources = sources.venues.filter((source) => !["permanent_food", "permanent_truck"].includes(source.sourceStatus));
+if (!rotatingSources.length || rotatingSources.every((source) => source.dataStatus === "error")) {
+  throw new Error("dist/data/sources.json cannot publish with every rotating source in error.");
+}
+
+if (rotatingSources.every((source) => {
+  const verifiedAt = Date.parse(source.lastSuccessfulAt || source.lastScrapedAt || sources.generatedAt);
+  return !Number.isFinite(verifiedAt) || Date.now() - verifiedAt > 36 * 60 * 60 * 1000;
+})) {
+  throw new Error("All rotating schedules are older than 36 hours. Refresh the data before publishing.");
 }
 
 const distStats = await stat(distDir);
