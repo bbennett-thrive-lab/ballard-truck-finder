@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-25T19:02:37.408Z",
+  "generatedAt": "2026-10-26T21:00:53.561Z",
   "dataStatus": "partial",
-  "lastSuccessfulAt": "2026-10-25T19:02:37.408Z",
+  "lastSuccessfulAt": "2026-10-26T21:00:53.561Z",
   "venues": [
     {
       "id": "stoup",
@@ -12,9 +12,9 @@
       "source": "https://www.stoupbrewing.com/ballard/",
       "message": "Parsed 28 Stoup food truck events.",
       "dataStatus": "fresh",
-      "lastAttemptedAt": "2026-10-25T19:02:37.408Z",
-      "lastSuccessfulAt": "2026-10-25T19:02:37.408Z",
-      "lastScrapedAt": "2026-10-25T19:02:37.408Z",
+      "lastAttemptedAt": "2026-10-26T21:00:53.561Z",
+      "lastSuccessfulAt": "2026-10-26T21:00:53.561Z",
+      "lastScrapedAt": "2026-10-26T21:00:53.561Z",
       "staleReason": null
     },
     {
@@ -26,7 +26,7 @@
       "source": "https://urbanfamilybrewing.com/home/calendar/",
       "message": "Urban Family calendar format was not recognized; previous data must be retained. HTML attempt 1: HTTP 202; final URL https://urbanfamilybrewing.com/home/calendar/; content type text/html; title \"\"; 187 bytes; 0 calendar cells; challenge markers present | HTML attempt 2: HTTP 202; final URL https://urbanfamilybrewing.com/home/calendar/; content type text/html; title \"\"; 187 bytes; 0 calendar cells; challenge markers present | Public page API: Invalid public page API JSON: HTTP 202; final URL https://urbanfamilybrewing.com/wp-json/wp/v2/pages/19015; content type text/html; title \"\"; 202 bytes; 0 calendar cells; challenge markers present Showing the last successful data until this source recovers.",
       "dataStatus": "stale",
-      "lastAttemptedAt": "2026-10-25T19:02:37.408Z",
+      "lastAttemptedAt": "2026-10-26T21:00:53.561Z",
       "lastSuccessfulAt": "2026-10-24T18:47:18.830Z",
       "lastScrapedAt": "2026-10-24T18:47:18.830Z",
       "staleReason": "Retained while Urban Family Brewing refresh is unavailable."
@@ -38,11 +38,11 @@
       "status": "live",
       "sourceStatus": "live",
       "source": "https://www.bbycballard.com/food-trucks-1-1",
-      "message": "Parsed 30 BBYC food truck events.",
+      "message": "Parsed 29 BBYC food truck events.",
       "dataStatus": "fresh",
-      "lastAttemptedAt": "2026-10-25T19:02:37.408Z",
-      "lastSuccessfulAt": "2026-10-25T19:02:37.408Z",
-      "lastScrapedAt": "2026-10-25T19:02:37.408Z",
+      "lastAttemptedAt": "2026-10-26T21:00:53.561Z",
+      "lastSuccessfulAt": "2026-10-26T21:00:53.561Z",
+      "lastScrapedAt": "2026-10-26T21:00:53.561Z",
       "staleReason": null
     },
     {
@@ -50,13 +50,13 @@
       "name": "Obec Brewing",
       "address": "1144 NW 52nd St",
       "status": "live",
-      "sourceStatus": "error",
+      "sourceStatus": "live",
       "source": "https://obecbrewing.com/",
-      "message": "Obec calendar format was not recognized; previous data must be retained.",
-      "dataStatus": "error",
-      "lastAttemptedAt": "2026-10-25T19:02:37.408Z",
-      "lastSuccessfulAt": "2026-10-24T18:47:18.830Z",
-      "lastScrapedAt": "2026-10-24T18:47:18.830Z",
+      "message": "Parsed today's Obec food truck: Plaza Garcia.",
+      "dataStatus": "fresh",
+      "lastAttemptedAt": "2026-10-26T21:00:53.561Z",
+      "lastSuccessfulAt": "2026-10-26T21:00:53.561Z",
+      "lastScrapedAt": "2026-10-26T21:00:53.561Z",
       "staleReason": null
     },
     {
@@ -69,9 +69,9 @@
       "foodUrl": "https://reubensbrews.com/location/ballard-taproom/",
       "message": "Reuben's Eats kitchen available; no rotating food truck schedule.",
       "dataStatus": "fresh",
-      "lastAttemptedAt": "2026-10-25T19:02:37.408Z",
-      "lastSuccessfulAt": "2026-10-25T19:02:37.408Z",
-      "lastScrapedAt": "2026-10-25T19:02:37.408Z",
+      "lastAttemptedAt": "2026-10-26T21:00:53.561Z",
+      "lastSuccessfulAt": "2026-10-26T21:00:53.561Z",
+      "lastScrapedAt": "2026-10-26T21:00:53.561Z",
       "staleReason": null
     },
     {
@@ -83,9 +83,9 @@
       "source": "https://www.luckyenvelopebrewing.com/",
       "message": "Parsed 1 Lucky Envelope food truck events.",
       "dataStatus": "fresh",
-      "lastAttemptedAt": "2026-10-25T19:02:37.408Z",
-      "lastSuccessfulAt": "2026-10-25T19:02:37.408Z",
-      "lastScrapedAt": "2026-10-25T19:02:37.408Z",
+      "lastAttemptedAt": "2026-10-26T21:00:53.561Z",
+      "lastSuccessfulAt": "2026-10-26T21:00:53.561Z",
+      "lastScrapedAt": "2026-10-26T21:00:53.561Z",
       "staleReason": null
     },
     {
@@ -98,9 +98,9 @@
       "foodUrl": "https://fairislebrewing.com/lamareamenu/",
       "message": "Fair Isle Brewing has onsite food or food partners; no rotating truck schedule emitted.",
       "dataStatus": "fresh",
-      "lastAttemptedAt": "2026-10-25T19:02:37.408Z",
-      "lastSuccessfulAt": "2026-10-25T19:02:37.408Z",
-      "lastScrapedAt": "2026-10-25T19:02:37.408Z",
+      "lastAttemptedAt": "2026-10-26T21:00:53.561Z",
+      "lastSuccessfulAt": "2026-10-26T21:00:53.561Z",
+      "lastScrapedAt": "2026-10-26T21:00:53.561Z",
       "staleReason": null
     },
     {
@@ -113,16 +113,16 @@
       "foodUrl": "https://greatnotion.com/pages/ballard-1",
       "message": "Great Notion Ballard has onsite food or food partners; no rotating truck schedule emitted.",
       "dataStatus": "fresh",
-      "lastAttemptedAt": "2026-10-25T19:02:37.408Z",
-      "lastSuccessfulAt": "2026-10-25T19:02:37.408Z",
-      "lastScrapedAt": "2026-10-25T19:02:37.408Z",
+      "lastAttemptedAt": "2026-10-26T21:00:53.561Z",
+      "lastSuccessfulAt": "2026-10-26T21:00:53.561Z",
+      "lastScrapedAt": "2026-10-26T21:00:53.561Z",
       "staleReason": null
     }
   ],
   "sourceCards": [
     {
       "title": "Manual scraper",
-      "body": "3 of 8 venue adapters produced current schedule data at 2026-10-25T19:02:38.574Z.",
+      "body": "4 of 8 venue adapters produced current schedule data at 2026-10-26T21:00:54.798Z.",
       "link": "data/schedule.json"
     },
     {

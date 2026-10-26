@@ -694,29 +694,6 @@
     "lastVerifiedAt": "2026-10-24T18:47:18.830Z"
   },
   {
-    "date": "2026-10-24",
-    "start": "13:00",
-    "end": "20:00",
-    "truck": "Wich Came First",
-    "venue": "Yonder Cider x Bale Breaker",
-    "address": "826 NW 49th St",
-    "cuisine": "Sandwiches",
-    "tags": [
-      "Lunch",
-      "Sandwiches"
-    ],
-    "source": "https://www.bbycballard.com/food-trucks-1-1",
-    "sourceType": "venue_calendar",
-    "sourceStatus": "live",
-    "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.817Z",
-    "notes": [
-      "Event page: https://www.bbycballard.com/events-one/59wz23srenh2nyf-8ex8l"
-    ],
-    "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
-  },
-  {
     "date": "2026-10-25",
     "start": "08:00",
     "end": "12:00",
@@ -738,29 +715,6 @@
     ],
     "dataStatus": "stale",
     "lastVerifiedAt": "2026-10-24T18:47:18.830Z"
-  },
-  {
-    "date": "2026-10-25",
-    "start": "13:00",
-    "end": "19:00",
-    "truck": "El Pirata Tortas Y Burritos / Now Make Me A Sandwich",
-    "venue": "Stoup Brewing - Ballard",
-    "address": "1108 NW 52nd St",
-    "cuisine": "Mexican and sandwiches",
-    "tags": [
-      "Tortas",
-      "Burritos",
-      "Sandwiches",
-      "Lunch"
-    ],
-    "source": "https://www.stoupbrewing.com/ballard/",
-    "sourceType": "venue_calendar",
-    "sourceStatus": "live",
-    "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.926Z",
-    "notes": [],
-    "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
   },
   {
     "date": "2026-10-25",
@@ -801,12 +755,35 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.817Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.222Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-byg92"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
+  },
+  {
+    "date": "2026-10-26",
+    "start": "16:00",
+    "end": "20:00",
+    "truck": "Plaza Garcia",
+    "venue": "Obec Brewing",
+    "address": "1144 NW 52nd St",
+    "cuisine": "Mexican",
+    "tags": [
+      "Mexican",
+      "Dinner"
+    ],
+    "source": "https://obecbrewing.com/",
+    "sourceType": "homepage_today",
+    "sourceStatus": "live",
+    "confidence": "today_only",
+    "lastScrapedAt": "2026-10-26T21:00:54.790Z",
+    "notes": [
+      "Obec homepage only exposes today's truck; date is in America/Los_Angeles."
+    ],
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-10-26",
@@ -850,10 +827,10 @@
     "confidence": "venue",
     "truckUrl": "https://www.whereyaatmatt.com/",
     "menuUrl": "https://www.whereyaatmatt.com/menu",
-    "lastScrapedAt": "2026-10-25T19:02:37.927Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.508Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-10-27",
@@ -894,12 +871,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.816Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.222Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hjccs5bmxk79edm-wmc3h-fgxee-wr2em-wazjt-g367e"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-10-27",
@@ -916,10 +893,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.928Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.508Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-10-28",
@@ -960,12 +937,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.816Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.221Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/49wrmadtyg74wf8-ayg6d-el3fx-wxpm4-tg8cn"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-10-28",
@@ -983,10 +960,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.929Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.509Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-10-29",
@@ -1005,10 +982,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.930Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.509Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-10-29",
@@ -1048,12 +1025,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.816Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.221Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hzdwx4grkcr5ffd-hssdh-ljblz-rdbcb-gyd7t"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-10-30",
@@ -1095,12 +1072,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.815Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.221Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/spkpzc3xel682bn-haz3l-798kw-sb9xp-z3as4"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-10-30",
@@ -1118,10 +1095,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.931Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.510Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-10-31",
@@ -1139,10 +1116,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.932Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.510Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-10-31",
@@ -1182,12 +1159,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.815Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.221Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/59wz23srenh2nyf-97wmr-6zh9g"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-01",
@@ -1205,10 +1182,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.933Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.511Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-01",
@@ -1226,12 +1203,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.829Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.227Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-byg92-jkp82"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-02",
@@ -1249,10 +1226,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.934Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.511Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-03",
@@ -1270,12 +1247,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.829Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.227Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hjccs5bmxk79edm-wmc3h-fgxee-wr2em-8g5xr"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-03",
@@ -1293,10 +1270,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.935Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.512Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-04",
@@ -1313,12 +1290,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.829Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.226Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/49wrmadtyg74wf8-ayg6d-el3fx"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-04",
@@ -1337,10 +1314,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.936Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.512Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-05",
@@ -1357,12 +1334,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.828Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.226Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hzdwx4grkcr5ffd-hssdh-ljblz-rdbcb-e6xyw-nblsn-fsxxl"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-05",
@@ -1380,10 +1357,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.937Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.512Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-06",
@@ -1400,12 +1377,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.828Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.226Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/385xg5dc3cpsfkj-8hf4l-d8xfl-5gf6t-fb78h-h6r9t-zt7hz-f3wbz-yt57z-wa7b8-5m9gr-4bxp5-9ttlg-e3c6l-btp56-za2na-yzdhw-2p7g7-8cjw8-4lnl4-3cwxb-yx6fa-kmxdc-dhfps-btkbb-2t887-lcrpj-b658h-2396r-4jhs2"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-06",
@@ -1423,10 +1400,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_homepage_carousel",
-    "lastScrapedAt": "2026-10-25T19:02:37.812Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.023Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-06",
@@ -1444,10 +1421,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.937Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.512Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-07",
@@ -1465,10 +1442,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.938Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.513Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-07",
@@ -1486,12 +1463,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.828Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.226Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/59wz23srenh2nyf-5dgch"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-08",
@@ -1511,10 +1488,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.939Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.513Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-08",
@@ -1532,12 +1509,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.828Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.226Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-byg92-ka6td"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-09",
@@ -1558,10 +1535,10 @@
     "confidence": "venue",
     "truckUrl": "https://www.whereyaatmatt.com/",
     "menuUrl": "https://www.whereyaatmatt.com/menu",
-    "lastScrapedAt": "2026-10-25T19:02:37.940Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.513Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-10",
@@ -1579,12 +1556,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.827Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.226Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hjccs5bmxk79edm-wmc3h-fgxee-wr2em-wazjt-b86nr"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-10",
@@ -1601,10 +1578,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.941Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.513Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-11",
@@ -1621,12 +1598,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.827Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.226Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/49wrmadtyg74wf8-ayg6d-el3fx-wxpm4-tg8cn-sbzfx"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-11",
@@ -1644,10 +1621,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.942Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.514Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-12",
@@ -1666,10 +1643,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.942Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.516Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-12",
@@ -1686,12 +1663,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.827Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.226Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hzdwx4grkcr5ffd-hssdh-ljblz-rdbcb-wyfy5"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-13",
@@ -1710,12 +1687,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.827Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.226Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/spkpzc3xel682bn-haz3l-rma25"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-13",
@@ -1733,10 +1710,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.943Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.517Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-14",
@@ -1754,10 +1731,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.944Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.517Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-14",
@@ -1774,12 +1751,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.826Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.226Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/59wz23srenh2nyf-97wmr-6gcps"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-15",
@@ -1797,10 +1774,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.945Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.517Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-15",
@@ -1818,12 +1795,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.826Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.226Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-byg92-cgskt"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-16",
@@ -1841,10 +1818,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.946Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.518Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-17",
@@ -1862,12 +1839,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.826Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.225Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hjccs5bmxk79edm-wmc3h-fgxee-wr2em-w7f6j"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-17",
@@ -1885,10 +1862,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.946Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.518Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-18",
@@ -1905,12 +1882,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.826Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.225Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/49wrmadtyg74wf8-ayg6d-el3fx-43gn9"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-18",
@@ -1929,10 +1906,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.948Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.518Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-19",
@@ -1949,12 +1926,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.825Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.225Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hzdwx4grkcr5ffd-hssdh-ljblz-rdbcb-e6xyw-nblsn-fsxxl-3wx3r"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-19",
@@ -1972,10 +1949,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.951Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.518Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-20",
@@ -1992,12 +1969,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.825Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.225Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/385xg5dc3cpsfkj-8hf4l-d8xfl-5gf6t-fb78h-h6r9t-zt7hz-f3wbz-yt57z-wa7b8-5m9gr-4bxp5-9ttlg-e3c6l-btp56-za2na-yzdhw-2p7g7-8cjw8-4lnl4-3cwxb-yx6fa-kmxdc-dhfps-btkbb-2t887-lcrpj-b658h-2396r-3ce2g"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-20",
@@ -2015,10 +1992,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.952Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.518Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-21",
@@ -2036,10 +2013,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-10-25T19:02:37.953Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.519Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-21",
@@ -2057,12 +2034,35 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.825Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.225Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/59wz23srenh2nyf-ysamh"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
+  },
+  {
+    "date": "2026-11-22",
+    "start": "13:00",
+    "end": "19:00",
+    "truck": "El Pirata Tortas Y Burritos / Now Make Me A Sandwich",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "Mexican and sandwiches",
+    "tags": [
+      "Tortas",
+      "Burritos",
+      "Sandwiches",
+      "Lunch"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "lastScrapedAt": "2026-10-26T21:00:54.519Z",
+    "notes": [],
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-22",
@@ -2080,12 +2080,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.825Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.225Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-byg92-85a47"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-24",
@@ -2103,12 +2103,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.824Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.225Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hjccs5bmxk79edm-wmc3h-fgxee-wr2em-wazjt-yfkht"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-27",
@@ -2127,12 +2127,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.824Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.225Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/spkpzc3xel682bn-haz3l-cslyc"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-28",
@@ -2149,12 +2149,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.824Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.225Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/59wz23srenh2nyf-97wmr-xbjjz"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   },
   {
     "date": "2026-11-29",
@@ -2172,11 +2172,11 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-10-25T19:02:37.824Z",
+    "lastScrapedAt": "2026-10-26T21:00:54.225Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-byg92-wyndl"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-10-25T19:02:37.408Z"
+    "lastVerifiedAt": "2026-10-26T21:00:53.561Z"
   }
 ]
