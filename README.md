@@ -78,7 +78,7 @@ This project is ready to publish as a static GitHub Pages site. The deployable a
 3. Set the build and deployment source to GitHub Actions.
 4. Push to the `main` branch or run the "Deploy GitHub Pages" workflow manually.
 
-The GitHub Actions workflow also runs every day at 16:17 UTC, which is 9:17 AM Pacific during daylight time and 8:17 AM during standard time. It uses Seattle's timezone while parsing dates. Each scheduled run installs dependencies, runs tests, refreshes the schedule data, builds `dist/`, verifies the artifact, commits accepted JSON back to `main` with `[skip ci]`, and deploys the updated static site. Saving the refresh keeps a last-known-good baseline and regular repository activity. Deployment checks reject a build when every rotating schedule is older than 36 hours. Source failures appear in the workflow summary and on the site.
+The GitHub Actions workflow runs every day at 10:00 AM Seattle time (`America/Los_Angeles`), automatically adjusting for daylight saving time. GitHub may queue a scheduled run, so the refreshed site can appear shortly after 10:00 AM. It uses Seattle's timezone while parsing dates. Each scheduled run installs dependencies, runs tests, refreshes the schedule data, builds `dist/`, verifies the artifact, commits accepted JSON back to `main` with `[skip ci]`, and deploys the updated static site. Saving the refresh keeps a last-known-good baseline and regular repository activity. Deployment checks reject a build when every rotating schedule is older than 36 hours. Source failures appear in the workflow summary and on the site.
 
 ## Open it
 
