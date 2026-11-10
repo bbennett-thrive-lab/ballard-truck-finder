@@ -932,13 +932,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.142Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.106Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-01",
@@ -956,13 +955,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.144Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.107Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-02",
@@ -980,13 +978,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.145Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.108Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-03",
@@ -1004,13 +1001,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.145Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.109Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-04",
@@ -1028,13 +1024,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.146Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.110Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-05",
@@ -1052,13 +1047,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.147Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.110Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-06",
@@ -1077,13 +1071,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.148Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.111Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-06",
@@ -1101,10 +1094,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_homepage_carousel",
-    "lastScrapedAt": "2026-11-10T01:26:45.766Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.277Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-07",
@@ -1122,13 +1115,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.148Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.112Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-08",
@@ -1146,13 +1138,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.149Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.113Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-08",
@@ -1170,59 +1161,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.150Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.113Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
-    ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
-  },
-  {
-    "date": "2026-11-08",
-    "start": "13:00",
-    "end": "20:00",
-    "truck": "Tacos & Beer",
-    "venue": "Yonder Cider x Bale Breaker",
-    "address": "826 NW 49th St",
-    "cuisine": "Mexican",
-    "tags": [
-      "Tacos",
-      "Lunch"
-    ],
-    "source": "https://www.bbycballard.com/food-trucks-1-1",
-    "sourceType": "venue_calendar",
-    "sourceStatus": "live",
-    "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.818Z",
-    "notes": [
-      "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-byg92-ka6td"
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
-  },
-  {
-    "date": "2026-11-09",
-    "start": "16:00",
-    "end": "20:00",
-    "truck": "Plaza Garcia",
-    "venue": "Obec Brewing",
-    "address": "1144 NW 52nd St",
-    "cuisine": "Mexican",
-    "tags": [
-      "Mexican",
-      "Dinner"
-    ],
-    "source": "https://obecbrewing.com/",
-    "sourceType": "homepage_today",
-    "sourceStatus": "live",
-    "confidence": "today_only",
-    "lastScrapedAt": "2026-11-10T01:26:46.204Z",
-    "notes": [
-      "Obec homepage only exposes today's truck; date is in America/Los_Angeles."
-    ],
-    "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-09",
@@ -1240,37 +1184,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.150Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.114Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
-  },
-  {
-    "date": "2026-11-09",
-    "start": "17:00",
-    "end": "20:00",
-    "truck": "Where Ya At Matt",
-    "venue": "Stoup Brewing - Ballard",
-    "address": "1108 NW 52nd St",
-    "cuisine": "New Orleans",
-    "tags": [
-      "Po' boys",
-      "Cajun",
-      "Dinner"
-    ],
-    "source": "https://www.stoupbrewing.com/ballard/",
-    "sourceType": "venue_calendar",
-    "sourceStatus": "live",
-    "confidence": "venue",
-    "truckUrl": "https://www.whereyaatmatt.com/",
-    "menuUrl": "https://www.whereyaatmatt.com/menu",
-    "lastScrapedAt": "2026-11-10T01:26:45.405Z",
-    "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-10",
@@ -1288,13 +1207,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.151Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.115Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-10",
@@ -1312,12 +1230,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.818Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.338Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hjccs5bmxk79edm-wmc3h-fgxee-wr2em-wazjt-b86nr"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-10",
@@ -1334,10 +1252,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.406Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.463Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-11",
@@ -1356,13 +1274,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.151Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.115Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-11",
@@ -1379,12 +1296,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.818Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.338Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/49wrmadtyg74wf8-ayg6d-el3fx-wxpm4-tg8cn-sbzfx"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-11",
@@ -1402,10 +1319,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.406Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.464Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-12",
@@ -1424,10 +1341,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.407Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.464Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-12",
@@ -1445,13 +1362,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.152Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.115Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-12",
@@ -1468,12 +1384,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.817Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.337Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hzdwx4grkcr5ffd-hssdh-ljblz-rdbcb-wyfy5"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-13",
@@ -1491,13 +1407,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.153Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.116Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-13",
@@ -1516,12 +1431,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.817Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.337Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/spkpzc3xel682bn-haz3l-rma25"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-13",
@@ -1539,10 +1454,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.408Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.465Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-14",
@@ -1560,10 +1475,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.408Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.466Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-14",
@@ -1581,13 +1496,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.153Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.117Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-14",
@@ -1604,12 +1518,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.817Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.337Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/59wz23srenh2nyf-97wmr-6gcps"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-15",
@@ -1627,13 +1541,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.154Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.118Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-15",
@@ -1651,10 +1564,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.409Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.466Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-15",
@@ -1672,13 +1585,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.154Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.118Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-15",
@@ -1696,12 +1608,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.817Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.336Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-byg92-cgskt"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-16",
@@ -1719,13 +1631,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.155Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.119Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-16",
@@ -1743,10 +1654,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.410Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.467Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-17",
@@ -1764,13 +1675,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.155Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.119Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-17",
@@ -1788,10 +1698,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.410Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.468Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-18",
@@ -1809,13 +1719,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.156Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.120Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-18",
@@ -1832,12 +1741,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.817Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.336Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/49wrmadtyg74wf8-ayg6d-el3fx-43gn9"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-18",
@@ -1856,10 +1765,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.411Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.468Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-19",
@@ -1877,13 +1786,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.156Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.120Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-19",
@@ -1900,12 +1808,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.817Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.336Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hzdwx4grkcr5ffd-hssdh-ljblz-rdbcb-e6xyw-nblsn-fsxxl-3wx3r"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-19",
@@ -1923,10 +1831,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.412Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.469Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-20",
@@ -1945,13 +1853,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.157Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.121Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-20",
@@ -1968,12 +1875,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.817Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.335Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/385xg5dc3cpsfkj-8hf4l-d8xfl-5gf6t-fb78h-h6r9t-zt7hz-f3wbz-yt57z-wa7b8-5m9gr-4bxp5-9ttlg-e3c6l-btp56-za2na-yzdhw-2p7g7-8cjw8-4lnl4-3cwxb-yx6fa-kmxdc-dhfps-btkbb-2t887-lcrpj-b658h-2396r-3ce2g"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-20",
@@ -1991,10 +1898,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.413Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.470Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-21",
@@ -2012,10 +1919,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.414Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.471Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-21",
@@ -2033,13 +1940,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.157Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.121Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-21",
@@ -2057,12 +1963,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.816Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.335Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/59wz23srenh2nyf-ysamh"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-22",
@@ -2080,13 +1986,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.158Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.122Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-22",
@@ -2106,10 +2011,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.414Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.471Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-22",
@@ -2127,13 +2032,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.158Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.123Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-22",
@@ -2151,12 +2055,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.816Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.335Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-byg92-85a47"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-23",
@@ -2174,13 +2078,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.159Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.123Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-23",
@@ -2201,10 +2104,10 @@
     "confidence": "venue",
     "truckUrl": "https://www.whereyaatmatt.com/",
     "menuUrl": "https://www.whereyaatmatt.com/menu",
-    "lastScrapedAt": "2026-11-10T01:26:45.414Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.472Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-24",
@@ -2222,13 +2125,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.161Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.124Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-24",
@@ -2246,12 +2148,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.816Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.334Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hjccs5bmxk79edm-wmc3h-fgxee-wr2em-wazjt-yfkht"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-24",
@@ -2268,10 +2170,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.415Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.472Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-25",
@@ -2290,13 +2192,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.161Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.124Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-25",
@@ -2314,10 +2215,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.415Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.473Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-26",
@@ -2336,10 +2237,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.416Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.473Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-27",
@@ -2357,13 +2258,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.162Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.126Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-27",
@@ -2382,12 +2282,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.816Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.334Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/spkpzc3xel682bn-haz3l-cslyc"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-27",
@@ -2404,10 +2304,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.416Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.474Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-28",
@@ -2425,10 +2325,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.417Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.474Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-28",
@@ -2446,13 +2346,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.162Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.126Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-28",
@@ -2469,12 +2368,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.816Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.334Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/59wz23srenh2nyf-97wmr-xbjjz"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-29",
@@ -2492,13 +2391,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.162Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.126Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-29",
@@ -2516,10 +2414,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.417Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.475Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-29",
@@ -2537,13 +2435,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.163Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.127Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-29",
@@ -2561,12 +2458,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.816Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.333Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-byg92-wyndl"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-30",
@@ -2584,13 +2481,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.163Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.127Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-11-30",
@@ -2608,10 +2504,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.418Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.476Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-01",
@@ -2629,13 +2525,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.163Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.127Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-01",
@@ -2653,10 +2548,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.419Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.476Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-02",
@@ -2674,13 +2569,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.163Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.128Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-02",
@@ -2697,12 +2591,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.822Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.346Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/49wrmadtyg74wf8-ayg6d-el3fx-t5s7d"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-02",
@@ -2721,10 +2615,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.419Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.477Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-03",
@@ -2742,13 +2636,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.163Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.128Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-03",
@@ -2765,12 +2658,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.822Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.346Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hzdwx4grkcr5ffd-hssdh-ljblz-rdbcb-e6xyw-nblsn-fsxxl-p2bey"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-03",
@@ -2788,10 +2681,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.420Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.478Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-04",
@@ -2810,13 +2703,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.163Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.128Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-04",
@@ -2833,12 +2725,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.822Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.346Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/385xg5dc3cpsfkj-8hf4l-d8xfl-5gf6t-fb78h-h6r9t-zt7hz-f3wbz-yt57z-wa7b8-5m9gr-4bxp5-9ttlg-e3c6l-btp56-za2na-yzdhw-2p7g7-8cjw8-4lnl4-3cwxb-yx6fa-kmxdc-dhfps-btkbb-2t887-lcrpj-b658h-2396r-53kh7"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-04",
@@ -2856,10 +2748,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.421Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.479Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-05",
@@ -2877,10 +2769,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.421Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.479Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-05",
@@ -2898,13 +2790,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-08T21:56:11.164Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.129Z",
     "notes": [
-      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving",
-      "Retained while Urban Family Brewing refresh is unavailable."
+      "Skipped 1 malformed event(s): Urban Family Thanksgiving: Unable to parse calendar event range for Thanksgiving"
     ],
-    "dataStatus": "stale",
-    "lastVerifiedAt": "2026-11-08T21:56:10.792Z"
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-05",
@@ -2922,12 +2813,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.822Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.345Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/59wz23srenh2nyf-t37he"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-06",
@@ -2947,10 +2838,10 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue",
-    "lastScrapedAt": "2026-11-10T01:26:45.422Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.480Z",
     "notes": [],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-06",
@@ -2968,12 +2859,36 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.821Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.345Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-byg92-bcdps"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
+  },
+  {
+    "date": "2026-12-07",
+    "start": "17:00",
+    "end": "20:00",
+    "truck": "Where Ya At Matt",
+    "venue": "Stoup Brewing - Ballard",
+    "address": "1108 NW 52nd St",
+    "cuisine": "New Orleans",
+    "tags": [
+      "Po' boys",
+      "Cajun",
+      "Dinner"
+    ],
+    "source": "https://www.stoupbrewing.com/ballard/",
+    "sourceType": "venue_calendar",
+    "sourceStatus": "live",
+    "confidence": "venue",
+    "truckUrl": "https://www.whereyaatmatt.com/",
+    "menuUrl": "https://www.whereyaatmatt.com/menu",
+    "lastScrapedAt": "2026-11-10T23:08:15.480Z",
+    "notes": [],
+    "dataStatus": "fresh",
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-08",
@@ -2991,12 +2906,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.821Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.345Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hjccs5bmxk79edm-wmc3h-fgxee-wr2em-wazjt-dgttf"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-09",
@@ -3013,12 +2928,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.821Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.345Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/49wrmadtyg74wf8-ayg6d-el3fx-wxpm4-482wt"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-10",
@@ -3035,12 +2950,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.821Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.345Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hzdwx4grkcr5ffd-hssdh-ljblz-rdbcb-wyfy5-8mkxc-4c6wa"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-11",
@@ -3059,12 +2974,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.821Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.344Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/spkpzc3xel682bn-haz3l-wk4j5"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-12",
@@ -3081,12 +2996,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.821Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.344Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/59wz23srenh2nyf-97wmr-g568h"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-13",
@@ -3104,12 +3019,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.821Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.344Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-byg92-kelzm-erjs9"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-16",
@@ -3126,12 +3041,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.820Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.343Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/49wrmadtyg74wf8-ayg6d-el3fx-rdg4d"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-17",
@@ -3148,12 +3063,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.820Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.343Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hzdwx4grkcr5ffd-hssdh-ljblz-rdbcb-e6xyw-nblsn-6yhn5"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-18",
@@ -3170,12 +3085,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.820Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.343Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/385xg5dc3cpsfkj-8hf4l-d8xfl-5gf6t-fb78h-h6r9t-zt7hz-f3wbz-yt57z-wa7b8-5m9gr-4bxp5-9ttlg-e3c6l-btp56-za2na-yzdhw-2p7g7-8cjw8-4lnl4-3cwxb-yx6fa-kmxdc-dhfps-btkbb-2t887-lcrpj-b658h-2396r-sm2cr"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-19",
@@ -3193,12 +3108,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.820Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.342Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/59wz23srenh2nyf-r7ahs"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-20",
@@ -3216,12 +3131,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.820Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.342Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-763rj"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-22",
@@ -3239,12 +3154,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.820Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.342Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/hjccs5bmxk79edm-wmc3h-fgxee-wr2em-wazjt-w6hm6"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-23",
@@ -3261,12 +3176,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.819Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.341Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/49wrmadtyg74wf8-ayg6d-el3fx-wxpm4-ps3a5"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-26",
@@ -3283,12 +3198,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.819Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.341Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/59wz23srenh2nyf-97wmr-clg8e"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-27",
@@ -3306,12 +3221,12 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.819Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.341Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/grt92k757zb3tsn-byr9j-w2cpd-e3df2-t9xcd-4ssg4-zmgx6-k5ebf-mwbs9-9mnzs-mafwx-yszgl-ply6x-jl4te-f9lfw-jfznl-jkg8m-mn6l4-a6jnt-cdx6g-6sfl4-rdkl8-lzpwz-cfk5s-378zc-2dd5m"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   },
   {
     "date": "2026-12-30",
@@ -3328,11 +3243,11 @@
     "sourceType": "venue_calendar",
     "sourceStatus": "live",
     "confidence": "venue_calendar_api",
-    "lastScrapedAt": "2026-11-10T01:26:45.819Z",
+    "lastScrapedAt": "2026-11-10T23:08:15.340Z",
     "notes": [
       "Event page: https://www.bbycballard.com/events-one/49wrmadtyg74wf8-ayg6d-el3fx-rdg4d-7c9n2"
     ],
     "dataStatus": "fresh",
-    "lastVerifiedAt": "2026-11-10T01:26:45.082Z"
+    "lastVerifiedAt": "2026-11-10T23:08:14.752Z"
   }
 ]
